@@ -4,6 +4,24 @@
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
 // Color system
+//建立W6作業的 Neutral
+$neutral-0:     #FFFFFF !default;
+$neutral-100:   #E8E8E9 !default;
+$neutral-200:   #BDBCC9 !default;
+$neutral-300:   #6A6978 !default;
+$neutral-400:   #4B4A52 !default;
+$neutral-500:   #18172C !default;
+$neutral-600:   #100C24 !default;
+
+$neutral:(
+  "0": $neutral-0,
+  "100": $neutral-100,
+  "200": $neutral-200,
+  "300": $neutral-300,
+  "400": $neutral-400,
+  "500": $neutral-500,
+  "600": $neutral-600
+) !default;
 
 // scss-docs-start gray-color-variables
 $white:    #fff !default;
@@ -299,6 +317,7 @@ $cyans: (
 
 // scss-docs-start theme-color-variables
 $primary:       $blue !default;
+$neu:       $neutral-600 !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -311,6 +330,7 @@ $dark:          $gray-900 !default;
 // scss-docs-start theme-colors-map
 $theme-colors: (
   "primary":    $primary,
+  "neu":        $neu,
   "secondary":  $secondary,
   "success":    $success,
   "info":       $info,
@@ -323,6 +343,7 @@ $theme-colors: (
 
 // scss-docs-start theme-text-variables
 $primary-text-emphasis:   shade-color($primary, 60%) !default;
+$neu-text-emphasis:   shade-color($neu, 60%) !default;
 $secondary-text-emphasis: shade-color($secondary, 60%) !default;
 $success-text-emphasis:   shade-color($success, 60%) !default;
 $info-text-emphasis:      shade-color($info, 60%) !default;
@@ -334,6 +355,7 @@ $dark-text-emphasis:      $gray-700 !default;
 
 // scss-docs-start theme-bg-subtle-variables
 $primary-bg-subtle:       tint-color($primary, 80%) !default;
+$neu-bg-subtle:       tint-color($neu, 80%) !default;
 $secondary-bg-subtle:     tint-color($secondary, 80%) !default;
 $success-bg-subtle:       tint-color($success, 80%) !default;
 $info-bg-subtle:          tint-color($info, 80%) !default;
@@ -345,6 +367,7 @@ $dark-bg-subtle:          $gray-400 !default;
 
 // scss-docs-start theme-border-subtle-variables
 $primary-border-subtle:   tint-color($primary, 60%) !default;
+$neu-border-subtle:   tint-color($neu, 60%) !default;
 $secondary-border-subtle: tint-color($secondary, 60%) !default;
 $success-border-subtle:   tint-color($success, 60%) !default;
 $info-border-subtle:      tint-color($info, 60%) !default;
@@ -414,8 +437,10 @@ $spacers: (
   2: $spacer * .5,
   2h: $spacer * .75,//有修改，這是增加的12px
   3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  4: $spacer * 1.5,//24px
+  5: $spacer * 2,//32px//有修改，原本：* 3,//48px
+  6: $spacer * 3,//48px//有修改，新增
+  7: $spacer * 4,//64px//有修改，新增  
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -900,22 +925,22 @@ $input-padding-x-lg:                    $input-btn-padding-x-lg !default;
 $input-font-size-lg:                    $input-btn-font-size-lg !default;
 
 $input-bg:                              var(--#{$prefix}body-bg) !default;
-$input-disabled-color:                  null !default;
+$input-disabled-color:                  var(--#{$prefix}gray-500);//有修改，原本：null !default;
 $input-disabled-bg:                     var(--#{$prefix}secondary-bg) !default;
 $input-disabled-border-color:           null !default;
 
-$input-color:                           var(--#{$prefix}body-color) !default;
+$input-color:                           var(--#{$prefix}gray-600);//有修改，原本：var(--#{$prefix}body-color) !default;
 $input-border-color:                    var(--#{$prefix}border-color) !default;
 $input-border-width:                    $input-btn-border-width !default;
 $input-box-shadow:                      var(--#{$prefix}box-shadow-inset) !default;
 
-$input-border-radius:                   var(--#{$prefix}border-radius) !default;
+$input-border-radius:                   var(--#{$prefix}border-radius-sm);//有修改，原本：var(--#{$prefix}border-radius) !default;
 $input-border-radius-sm:                var(--#{$prefix}border-radius-sm) !default;
 $input-border-radius-lg:                var(--#{$prefix}border-radius-lg) !default;
 
 $input-focus-bg:                        $input-bg !default;
 $input-focus-border-color:              tint-color($component-active-bg, 50%) !default;
-$input-focus-color:                     $input-color !default;
+$input-focus-color:                     var(--#{$prefix}neutral-600);//有修改，原本：$input-color !default;
 $input-focus-width:                     $input-btn-focus-width !default;
 $input-focus-box-shadow:                $input-btn-focus-box-shadow !default;
 

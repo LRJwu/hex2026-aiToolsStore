@@ -1,0 +1,9 @@
+.input-group{
+    &>.form-control{
+        padding: $input-padding-y $input-padding-x-lg;
+    }
+    &>.btn{
+        --bs-btn-padding-x: 0.75rem;
+        --bs-btn-border-radius: var(--bs-border-radius-sm);
+    }
+}
