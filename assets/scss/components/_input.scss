@@ -6,6 +6,9 @@
         --bs-btn-padding-x: 0.75rem;
         --bs-btn-border-radius: var(--bs-border-radius-sm);
     }
+    &.search input{
+        --bs-input-placeholder-color:#78777D;
+    }
     &.search .btn-outline-secondary {
     --bs-btn-color: var(--bs-gray-900);
     --bs-btn-bg: var(--bs-gray-200);

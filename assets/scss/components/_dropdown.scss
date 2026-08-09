@@ -1,0 +1,14 @@
+.dropdown{
+    .btn{
+        color: var(--bs-gray-800);
+    }
+    &.disabled,.disabled,&[disabled],[disabled]{
+        color: var(--bs-gray-300);
+    }
+    & .btn.show{
+        border-color: transparent;
+    }
+    & .dropdown-toggle:after{
+        display: none;
+    }
+}

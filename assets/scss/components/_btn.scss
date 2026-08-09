@@ -1,3 +1,7 @@
+.btn{
+    display: flex;
+    gap:map-get($spacers,2);
+}
 .btn-icon {
   @include button-variant(
     $background:transparent,
