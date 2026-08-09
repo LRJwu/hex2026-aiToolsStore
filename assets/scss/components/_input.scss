@@ -1,9 +1,17 @@
 .input-group{
-    &>.form-control{
+    &:not(.search)>.form-control{
         padding: $input-padding-y $input-padding-x-lg;
     }
     &>.btn{
         --bs-btn-padding-x: 0.75rem;
         --bs-btn-border-radius: var(--bs-border-radius-sm);
     }
+    &.search .btn-outline-secondary {
+    --bs-btn-color: var(--bs-gray-900);
+    --bs-btn-bg: var(--bs-gray-200);
+    --bs-btn-hover-bg: var(--bs-gray-200);
+    --bs-btn-active-bg: var(--bs-gray-200);
+    --bs-btn-disabled-bg: var(--bs-gray-200);
+
+}
 }
