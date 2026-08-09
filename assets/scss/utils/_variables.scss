@@ -672,7 +672,7 @@ $display-font-sizes: (
 
 $display-font-family: null !default;
 $display-font-style:  null !default;
-$display-font-weight: $headings-line-weight;//有修改，原本：300 !default;
+$display-font-weight: $headings-font-weight;//有修改，原本：300 !default;
 $display-line-height: $headings-line-height !default;
 // scss-docs-end display-headings
 
