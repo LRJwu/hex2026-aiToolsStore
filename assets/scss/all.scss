@@ -30,12 +30,12 @@
 
 // 7. 共用版面樣式
 // 放網站共用的大型版面區塊，例如 header、footer、navbar
-// @import "./layout/header";
+@import "./layout/header";
 @import "./layout/footer";
 
 // 8. 共用元件樣式
 // 放 Bootstrap 未提供，或需要額外客製化的共用元件
-// @import "./components/button";
+@import "./components/btn";
 @import "./components/input";
 
 // 9. 單一頁面樣式
