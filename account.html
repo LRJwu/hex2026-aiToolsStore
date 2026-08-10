@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <title>會員中心</title>
+  <script type="module" crossorigin src="/web-layout-training-vite/assets/account-CoX0musm.js"></script>
+  <link rel="stylesheet" crossorigin href="/web-layout-training-vite/assets/account-DzJ0jz4w.css">
+</head>
+
+<body>
+    <header class="sticky-top bg-white">
+    <div class="container">
+        <nav class="navbar justify-content-start">
+            <a class="navbar-brand" href="#">
+                <img src="/web-layout-training-vite/assets/logo-BVlqBbcd.png" alt="Logo" class="d-inline-block align-text-top" />
+            </a>
+            <div class="d-none d-lg-flex align-items-center gap-3 flex-grow-1">
+                <div class="dropdown">
+                    <a class="btn dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">探索 AI 工具 <i class="bi bi-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">內容生成</a></li>
+                        <li><a href="#" class="dropdown-item">視覺設計</a></li>
+                        <li><a href="#" class="dropdown-item">影像製作</a></li>
+                        <li><a href="#" class="dropdown-item">程式開發</a></li>
+                        <li><a href="#" class="dropdown-item">教育與學習</a></li>
+                        <li><a href="#" class="dropdown-item">資料分析</a></li>
+                        <li><a href="#" class="dropdown-item">生產力工具</a></li>
+                        <li><a href="#" class="dropdown-item">音樂創作</a></li>
+                    </ul>
+                </div>
+                <from>
+                    <div class="input-group search">
+                        <input type="text" class="form-control" placeholder="輸入工具名稱、功能或關鍵字" />
+                        <button class="btn btn-outline-secondary" type="button">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </from>
+                <button type="button" class="btn btn-outline-primary ms-auto">
+                    <i class="bi bi-person"></i>會員中心
+                </button>
+            </div>
+            <div class="ms-auto d-flex gap-2 d-lg-none">
+                <a class="btn btn-icon" href="#collapseSearch" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSearch"><i class="bi bi-search"></i></a>
+                <a class="btn btn-icon" href="#offcanvasNavbar" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"><i class="bi bi-list"></i></a>
+            </div>
+        </nav>
+    </div>
+    <div id="collapseSearch" class="collapse bg-light w-100 border-y">
+        <form class="d-flex justify-content-center align-items-center w-100 p-2h px-3 gap-1" role="search">
+            <div class="input-group search">
+                <input type="text" class="form-control" placeholder="輸入工具名稱、功能或關鍵字" />
+                <button class="btn btn-outline-secondary" type="button">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+            <a class="btn btn-icon" href="#collapseSearch" data-bs-toggle="collapse" data-bs-target="#collapseSearch">
+                <i class="bi bi-x-lg"></i></a>
+        </form>
+    </div>
+</header>
+<div id="offcanvasNavbar" class="offcanvas offcanvas-end g-3">
+    <div class="offcanvas-header pb-0">
+        <button class="btn-close btn btn-icon m-0 ms-auto" type="button" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body pt-0">
+        <ul class="nav flex-column gap-2">
+            <li class="nav-items p-2h border-bottom">
+                <h3 class="h6 mb-0">探索 AI 工具</h3>
+            </li>
+            <li class="nav-items">
+                <a href="#" class="nav-link text-dark">內容生成</a>
+            </li>
+            <li class="nav-items">
+                <a href="#" class="nav-link text-dark">視覺設計</a>
+            </li>
+            <li class="nav-items">
+                <a href="#" class="nav-link text-dark">影像製作</a>
+            </li>
+            <li class="nav-items">
+                <a href="#" class="nav-link text-dark">程式開發</a>
+            </li>
+            <li class="nav-items">
+                <a href="#" class="nav-link text-dark">教育與學習</a>
+            </li>
+            <li class="nav-items">
+                <a href="#" class="nav-link text-dark">資料分析</a>
+            </li>
+            <li class="nav-items">
+                <a href="#" class="nav-link text-dark">生產力工具</a>
+            </li>
+            <li class="nav-items">
+                <a href="#" class="nav-link text-dark">音樂創作</a>
+            </li>
+        </ul>
+    </div>
+    <form class="p-5 pt-3">
+        <button type="button" class="btn btn-primary w-100 d-none">
+            登入/註冊
+        </button>
+        <button type="button" class="btn btn-primary w-100">
+            <i class="bi bi-person"></i>會員中心
+        </button>
+    </form>
+</div>        <!-- <h1>會員中心</h1> -->
+        <div class="bg-light py-4 py-lg-6 g-4">
+            <div class="container">
+                <div class="row g-3 g-lg-4">
+                    <nav class="col-lg-3">
+                        <ul class="list-group">
+                            <li class="list-group-item  px-3 py-4 px-lg-4 py-lg-6">
+                                <!-- profile -->
+                                <div class="d-flex flex-lg-wrap justify-content-lg-center gap-3">
+                                    <div class="userImg"><img src="/web-layout-training-vite/assets/avatar-CV3pqSuS.png" alt="使用者頭像" /></div>
+                                    <section class="text-lg-center">
+                                        <h1 class="mb-1 h5">Josh</h1>
+                                        <p  class="mb-1 body-sm text-gray-600">helloworld@gmail.com</p>
+                                        <p  class="mb-0 body-sm badge text-bg-success">已驗證</p>
+                                    </section>
+                                </div>
+                            </li>
+                            <li data-bs-toggle="tab" role="tab" data-bs-target="#tab-1" aria-controls="nav-tab-1" id="nav-tab-1" aria-selected="true" class="list-group-item list-group-item-action cursor-pointer active">
+                                <i class="bi bi-person"></i> 個人資料
+                            </li>
+                            <li data-bs-toggle="tab" role="tab" data-bs-target="#tab-2" aria-controls="nav-tab-2" id="nav-tab-2" aria-selected="false" class="list-group-item list-group-item-action cursor-pointer">
+                                <i class="bi bi-laptop"></i> 我上架的 AI 工具
+                            </li>
+                            <li data-bs-toggle="tab" role="tab" data-bs-target="#tab-3" aria-controls="nav-tab-3" id="nav-tab-3" aria-selected="false" class="list-group-item list-group-item-action cursor-pointer">
+                                <i class="bi bi-list-ul"></i> 我訂閱的 AI 工具
+                            </li>
+                        </ul>
+                    </nav>
+                    <mian class="col-lg-9 tab-content">
+                        <section role="tabpanel" tabindex="0" id="tab-1" aria-labelledby="nav-tab-1" class="tab-pane fade show active">
+                            <!-- 個人資料 -->
+                            <form>
+                                <section class="bg-white rounded p-4 p-lg-6 mb-3 mb-lg-4">
+                                    <h2 class="h5 h4-lg mb-3">基本資料</h2>
+                                    <div class="row g-3">
+                                        <div class="order-1 col-12 col-lg-6">
+                                            <div class="d-grid gap-1">
+                                                <label for="userName" class="from-label">姓名 <span class="text-danger">*</span></label>
+                                                <input id="userName" name="userName" type="text" class="form-control"
+                                                    placeholder="Josh" value="Josh" />
+                                            </div>
+                                        </div>
+                                        <div class="order-1 col-12 col-lg-6">
+                                            <div class="d-grid gap-1">
+                                                <label for="nickname" class="from-label">暱稱 <span class="text-danger">*</span></label>
+                                                <input id="nickname" name="nickname" type="text" class="form-control"
+                                                    placeholder="請輸入你的暱稱" />
+                                            </div>
+                                        </div>
+                                        <div class="order-1 order-lg-4 col-12 col-lg-6">
+                                            <div class="d-grid gap-1">
+                                                <label for="email" class="from-label">聯絡信箱 <span class="text-danger">*</span></label>
+                                                <input id="email" name="email" type="text" class="form-control"
+                                                    placeholder="helloworld@gmail.com" value="helloworld@gmail.com" />
+                                            </div>
+                                        </div>
+                                        <div class="order-1 order-lg-4 col-12 col-lg-6">
+                                            <div class="d-grid gap-1">
+                                                <label for="phone" class="from-label">聯絡電話 <span class="text-danger">*</span></label>
+                                                <input id="phone" name="phone" type="tel" class="form-control"
+                                                    placeholder="0912345678" />
+                                            </div>
+                                        </div>
+                                        <div class="order-1 order-lg-3 col-12 col-lg-6">
+                                            <div class="d-grid gap-1">
+                                                <label for="birdthday" class="from-label"><span class="d-lg-none">生日</span><span class="text-danger">*</span></label>
+                                                <input id="birdthday" name="birdthday" type="date" class="form-control" placeholder="請選擇日期" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="bg-white rounded p-4 p-lg-6 mb-3 mb-lg-4">
+                                    <h2 class="h5 h4-lg mb-3">通知設定</h2>
+                                    <p class="body-sm text-gray-600">
+                                        通知將寄送到 helloworld@gmai.com
+                                        ，如需變更，請至頁面上方的基本資料修改聯絡信箱
+                                    </p>
+                                    <div class="form-check">
+                                        <input id="checkbox1" name="checkbox1" type="checkbox" class="from-check-input" />
+                                        <label for="checkbox1" class="from-check-label">工具評價與回饋</label>
+                                        <p class="body-sm text-gray-600">即時掌握使用者留下的評價和回饋</p>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="checkbox2" name="checkbox2" type="checkbox" class="from-check-input" />
+                                        <label for="checkbox2" class="from-check-label">AI 趨勢與最新工具</label>
+                                        <p class="body-sm text-gray-600">推薦適合你的新 AI 工具</p>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="checkbox3" name="checkbox3" type="checkbox" class="from-check-input" />
+                                        <label for="checkbox3" class="from-check-label">工具功能更新</label>
+                                        <p class="body-sm text-gray-600">
+                                            當你訂閱的 AI 工具有新功能或重要更新時，我們會寄信通知你
+                                        </p>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="checkbox4" name="checkbox4" type="checkbox" class="from-check-input" />
+                                        <label for="checkbox4" class="from-check-label">活動與優惠資訊</label>
+                                        <p class="body-sm text-gray-600">把握平台限時優惠與活動資訊</p>
+                                    </div>
+                                </section>
+                                <button type="submit" class="d-block ms-auto btn btn-primary">
+                                    儲存
+                                </button>
+                            </form>
+                        </section>
+                        <section role="tabpanel" tabindex="0" id="tab-2" aria-labelledby="nav-tab-2" class="tab-pane fade">
+                            <!-- 我上架的 AI 工具 -->
+                            <section class="bg-white rounded p-4 p-lg-6 mb-3 mb-lg-4">
+                                <h2 class="h5 h4-lg mb-4 mb-lg-5 d-flex justify-content-between align-items-center">
+                                    我上架的 AI 工具
+                                    <a href="#上架工具頁面.html" class="ms-auto btn btn-primary">上架工具</a>
+                                </h2>
+                                <div class="table-responsive">
+                                    <table class="table align-middle text-nowrap">
+                                        <thead class="border-bottom border-dark">
+                                            <tr class="text-nowrap">
+                                                <td>工具名稱</td>
+                                                <td>工具類型</td>
+                                                <td>訂閱人數</td>
+                                                <td>狀態</td>
+                                                <td>操作</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>AutoTasker</td>
+                                                <td>生產力工具</td>
+                                                <td>38</td>
+                                                <td>
+                                                    <span class="badge text-bg-success">已上架</span>
+                                                <td><a href="#" class="link-primary">查看訂閱用戶</a></td>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>PromptCraft</td>
+                                                <td>內容生成</td>
+                                                <td>0</td>
+                                                <td>
+                                                    <span class="badge text-bg-warning">審核中</span>
+                                                <td><a href="#" class="link-primary">查看訂閱用戶</a></td>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>SEO Radar</td>
+                                                <td>資料分析</td>
+                                                <td>125</td>
+                                                <td>
+                                                    <span class="badge text-bg-warning">審核中</span>
+                                                <td><a href="#" class="link-primary">查看訂閱用戶</a></td>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </section>
+                        </section>
+                        <section role="tabpanel" tabindex="0" id="tab-3" aria-labelledby="nav-tab-3" class="tab-pane fade">
+                            <!-- 我訂閱的 AI 工具 -->
+                            <section class="bg-white rounded p-4 p-lg-6 mb-3 mb-lg-4">
+                                <h2 class="h5 h4-lg mb-3"> 我訂閱的 AI 工具 </h2>
+                                <div class="table-responsive">
+                                    <table class="table align-middle text-nowrap">
+                                        <thead class="border-bottom border-dark">
+                                            <tr class="text-nowrap">
+                                                <td>工具名稱</td>
+                                                <td>工具類型</td>
+                                                <td>方案</td>
+                                                <td>付款週期</td>
+                                                <td>下次扣款日</td>
+                                                <td>操作</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>WriteCraft AI</td>
+                                                <td>內容生成</td>
+                                                <td><span class="badge text-bg-secondary">免費</span></td>
+                                                <td>月繳</td>
+                                                <td>2026/05/15</td>
+                                                <td><a href="#訂閱資料頁.html" class="link-primary">查看訂閱資料</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>CodePilot Pro</td>
+                                                <td>程式開發</td>
+                                                <td><span class="badge text-bg-success">基礎</span></td>
+                                                <td>月繳</td>
+                                                <td>2026/05/15</td>
+                                                <td><a href="#訂閱資料頁.html" class="link-primary">查看訂閱資料</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>SEO Radar</td>
+                                                <td>資料分析</td>
+                                                <td><span class="badge text-bg-warning">進階</span></td>
+                                                <td>月繳</td>
+                                                <td>2026/05/15</td>
+                                                <td><a href="#訂閱資料頁.html" class="link-primary">查看訂閱資料</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </section>
+                        </section>
+                    </mian>
+                </div>
+            </div>
+        </div>
+        <footer id="footer" class="footer bg-dark text-white py-5 py-lg-7 g-4">
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-md-6 mb-4">
+                <a href="#" class="navbar-brand"> <img src="/web-layout-training-vite/assets/logo-BVlqBbcd.png" alt="Logo" class="d-inline-block align-text-top" /> </a>
+            </div>
+            <div class="col-md-6">
+                <from>
+                    <label for="subEmail" class="form-label">訂閱我們，掌握最新 AI 工具與趨勢</label>
+                    <div class="input-group">
+                        <input  id="subEmail" type="email" class="form-control" placeholder="helloworld@gmail.com" disabled/>
+                        <button class="btn btn-primary" type="button"> 訂閱 </button>
+                    </div>
+                </from>
+            </div>
+        </div>
+        <p class="copyright body-sm">Copyright ©2026 AI ToolVerse<br>All Rights Reserved.</p>
+    </div>
+</footer>            
+</body>
+
+</html>
