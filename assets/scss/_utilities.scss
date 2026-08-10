@@ -22,7 +22,18 @@ $utilities: map-merge(                    // 使用 Sass 的 map-merge 函式，
       class: bg-gray,           // 前綴會變成 .bg-gray-
       values: $grays            // 直接套用你的 $grays
     ),
-
+    
+    //新增滑鼠樣式
+    "cursor": (
+      property: cursor,
+      class: cursor, // 或改成 pointer-events/cursor
+      values: (
+        pointer: pointer,
+        default: default,
+        not-allowed: not-allowed,
+      )
+    ),
+  
     //建立圓角-md尺寸
     "rounded": map-merge(
       map-get($utilities, "rounded"),

@@ -27,55 +27,55 @@
                                     </section>
                                 </div>
                             </li>
-                            <li class="list-group-item active">
+                            <li data-bs-toggle="tab" role="tab" data-bs-target="#tab-1" aria-controls="nav-tab-1" id="nav-tab-1" aria-selected="true" class="list-group-item list-group-item-action cursor-pointer active">
                                 <i class="bi bi-person"></i> 個人資料
                             </li>
-                            <li class="list-group-item">
+                            <li data-bs-toggle="tab" role="tab" data-bs-target="#tab-2" aria-controls="nav-tab-2" id="nav-tab-2" aria-selected="false" class="list-group-item list-group-item-action cursor-pointer">
                                 <i class="bi bi-laptop"></i> 我上架的 AI 工具
                             </li>
-                            <li class="list-group-item">
+                            <li data-bs-toggle="tab" role="tab" data-bs-target="#tab-3" aria-controls="nav-tab-3" id="nav-tab-3" aria-selected="false" class="list-group-item list-group-item-action cursor-pointer">
                                 <i class="bi bi-list-ul"></i> 我訂閱的 AI 工具
                             </li>
                         </ul>
                     </nav>
-                    <mian class="col-lg-9">
-                        <section class="">
+                    <mian class="col-lg-9 tab-content">
+                        <section role="tabpanel" tabindex="0" id="tab-1" aria-labelledby="nav-tab-1" class="tab-pane fade show active">
                             <!-- 個人資料 -->
                             <form>
                                 <section class="bg-white rounded p-4 p-lg-6 mb-3 mb-lg-4">
                                     <h2 class="h5 h4-lg mb-3">基本資料</h2>
                                     <div class="row g-3">
-                                        <div class="col-12 col-lg-6">
+                                        <div class="order-1 col-12 col-lg-6">
                                             <div class="d-grid gap-1">
                                                 <label for="userName" class="from-label">姓名 <span class="text-danger">*</span></label>
                                                 <input id="userName" name="userName" type="text" class="form-control"
                                                     placeholder="Josh" value="Josh" />
                                             </div>
                                         </div>
-                                        <div class="col-12 col-lg-6">
+                                        <div class="order-1 col-12 col-lg-6">
                                             <div class="d-grid gap-1">
                                                 <label for="nickname" class="from-label">暱稱 <span class="text-danger">*</span></label>
                                                 <input id="nickname" name="nickname" type="text" class="form-control"
                                                     placeholder="請輸入你的暱稱" />
                                             </div>
                                         </div>
-                                        <div class="col-12 col-lg-6">
+                                        <div class="order-1 order-lg-4 col-12 col-lg-6">
                                             <div class="d-grid gap-1">
                                                 <label for="email" class="from-label">聯絡信箱 <span class="text-danger">*</span></label>
                                                 <input id="email" name="email" type="text" class="form-control"
                                                     placeholder="helloworld@gmail.com" value="helloworld@gmail.com" />
                                             </div>
                                         </div>
-                                        <div class="col-12 col-lg-6">
+                                        <div class="order-1 order-lg-4 col-12 col-lg-6">
                                             <div class="d-grid gap-1">
                                                 <label for="phone" class="from-label">聯絡電話 <span class="text-danger">*</span></label>
                                                 <input id="phone" name="phone" type="tel" class="form-control"
                                                     placeholder="0912345678" />
                                             </div>
                                         </div>
-                                        <div class="col-12 col-lg-6">
+                                        <div class="order-1 order-lg-3 col-12 col-lg-6">
                                             <div class="d-grid gap-1">
-                                                <label for="birdthday" class="from-label">生日<span class="text-danger">*</span></label>
+                                                <label for="birdthday" class="from-label"><span class="d-lg-none">生日</span><span class="text-danger">*</span></label>
                                                 <input id="birdthday" name="birdthday" type="date" class="form-control" placeholder="請選擇日期" />
                                             </div>
                                         </div>
@@ -115,7 +115,7 @@
                                 </button>
                             </form>
                         </section>
-                        <section class="">
+                        <section role="tabpanel" tabindex="0" id="tab-2" aria-labelledby="nav-tab-2" class="tab-pane fade">
                             <!-- 我上架的 AI 工具 -->
                             <section class="bg-white rounded p-4 p-lg-6 mb-3 mb-lg-4">
                                 <h2 class="h5 h4-lg mb-4 mb-lg-5 d-flex justify-content-between align-items-center">
@@ -166,7 +166,7 @@
                                 </div>
                             </section>
                         </section>
-                        <section class="">
+                        <section role="tabpanel" tabindex="0" id="tab-3" aria-labelledby="nav-tab-3" class="tab-pane fade">
                             <!-- 我訂閱的 AI 工具 -->
                             <section class="bg-white rounded p-4 p-lg-6 mb-3 mb-lg-4">
                                 <h2 class="h5 h4-lg mb-3"> 我訂閱的 AI 工具 </h2>
