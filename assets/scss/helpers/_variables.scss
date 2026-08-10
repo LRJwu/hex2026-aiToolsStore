@@ -570,7 +570,7 @@ $border-color-translucent:    rgba($black, .175) !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
-$border-radius:               .375rem !default;
+$border-radius:               .75rem;//有修改，原本：.375 !default;
 $border-radius-sm:            .5rem;//有修改，原本：.25rem !default;
 $border-radius-md:            .75rem;//有修改，新增md尺寸 12px
 $border-radius-lg:            .5rem !default;
@@ -965,7 +965,7 @@ $form-color-width:                      3rem !default;
 // scss-docs-start form-check-variables
 $form-check-input-width:                  1em !default;
 $form-check-min-height:                   $font-size-base * $line-height-base !default;
-$form-check-padding-start:                $form-check-input-width + .5em !default;
+$form-check-padding-start:                0;//有修改，原本：$form-check-input-width + .5em !default;
 $form-check-margin-bottom:                .125rem !default;
 $form-check-label-color:                  null !default;
 $form-check-label-cursor:                 null !default;
@@ -1513,12 +1513,12 @@ $toast-header-border-color:         $toast-border-color !default;
 // Badges
 
 // scss-docs-start badge-variables
-$badge-font-size:                   .75em !default;
-$badge-font-weight:                 $font-weight-bold !default;
+$badge-font-size:                   .875em;//有修改，原本：.75em !default;
+$badge-font-weight:                 $font-weight-normal;//有修改，原本：$font-weight-bold !default;
 $badge-color:                       $white !default;
-$badge-padding-y:                   .35em !default;
-$badge-padding-x:                   .65em !default;
-$badge-border-radius:               var(--#{$prefix}border-radius) !default;
+$badge-padding-y:                   .25em;//有修改，原本：.35em !default;
+$badge-padding-x:                   .5em;//有修改，原本：.65em !default;
+$badge-border-radius:               var(--#{$prefix}border-radius-sm) !default;
 // scss-docs-end badge-variables
 
 
@@ -1610,21 +1610,21 @@ $list-group-color:                  var(--#{$prefix}body-color) !default;
 $list-group-bg:                     var(--#{$prefix}body-bg) !default;
 $list-group-border-color:           var(--#{$prefix}border-color) !default;
 $list-group-border-width:           var(--#{$prefix}border-width) !default;
-$list-group-border-radius:          var(--#{$prefix}border-radius) !default;
+$list-group-border-radius:          var(--#{$prefix}border-radius-md) !default;
 
-$list-group-item-padding-y:         $spacer * .5 !default;
+$list-group-item-padding-y:         $spacer * .75;//有修改，原本：* .5 !default;
 $list-group-item-padding-x:         $spacer !default;
 // fusv-disable
 $list-group-item-bg-scale:          -80% !default; // Deprecated in v5.3.0
 $list-group-item-color-scale:       40% !default; // Deprecated in v5.3.0
 // fusv-enable
 
-$list-group-hover-bg:               var(--#{$prefix}tertiary-bg) !default;
+$list-group-hover-bg:               var(--#{$prefix}gray-100);//有修改，原本：var(--#{$prefix}tertiary-bg) !default;
 $list-group-active-color:           $component-active-color !default;
 $list-group-active-bg:              $component-active-bg !default;
 $list-group-active-border-color:    $list-group-active-bg !default;
 
-$list-group-disabled-color:         var(--#{$prefix}secondary-color) !default;
+$list-group-disabled-color:         var(--#{$prefix}gray-600);//有修改，原本：var(--#{$prefix}secondary-color) !default;
 $list-group-disabled-bg:            $list-group-bg !default;
 
 $list-group-action-color:           var(--#{$prefix}secondary-color) !default;

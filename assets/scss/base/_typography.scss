@@ -14,3 +14,20 @@ body{
     font-size: 14px;
     line-height: $line-height-base;
 }
+
+// 遍歷所有斷點 (xs, sm, md, lg, xl, xxl)
+@each $breakpoint, $value in $grid-breakpoints {
+  // 建立斷點 infix，例如 "" (針對 xs) 或 "-md"
+  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+  // 使用 Bootstrap 的 RWD Mixin
+  @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+    @each $level, $size in $font-sizes {
+      .h#{$level}#{$infix} {
+        font-size: $size !important;
+        font-weight: $headings-font-weight;
+        line-height: $headings-line-height;
+      }
+    }
+  }
+}

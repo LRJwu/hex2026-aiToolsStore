@@ -1,0 +1,5 @@
+.list-group-item{
+    & .bi{
+        margin-right: map-get($spacers, 1 );
+    }
+}

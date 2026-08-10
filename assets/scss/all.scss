@@ -26,7 +26,7 @@
 // 6. 專案自訂工具類
 // 放手寫的 utility class，比如說 cursor
 // 如果要修改 Bootstrap 的 $utilities map，則需要放在 Bootstrap 產生 utilities 之前
-// @import "./utilities";
+@import "./utilities";
 
 // 7. 共用版面樣式
 // 放網站共用的大型版面區塊，例如 header、footer、navbar
@@ -39,9 +39,10 @@
 @import "./components/input";
 @import "./components/offcanvas";
 @import "./components/dropdown";
+@import "./components/list";
 
 // 9. 單一頁面樣式
 // 放特定頁面才會使用的樣式，例如首頁、關於我們
 // 放在最後，必要時可以覆蓋前面的共用樣式
-@import "./pages/index";
-// @import "./pages/account";
+// @import "./pages/index";
+@import "./pages/account";

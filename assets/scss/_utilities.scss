@@ -1,0 +1,47 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+$utilities: map-merge(                    // 使用 Sass 的 map-merge 函式，將舊有的 $utilities 與新的設定合併
+  $utilities,                             // 第一個參數：原本 Bootstrap 的 $utilities 陣列
+  (                                       // 第二個參數：你要新增或覆蓋的設定
+    //建立灰色系列
+    "gray-color": (                            // 修改名稱為 "color" 的 utility 設定（即控制文字顏色的設定）
+      property: color,                    // 輸出的 CSS 屬性是 color
+      class: text-gray,                        // Class 前綴名稱是 .text-
+      local-vars: (                       // 定義內部使用的 CSS 變數
+        "text-opacity": 1,               // 產生 --bs-text-opacity: 1;
+      ),
+      values:$grays,
+    ),
+    "gray-bg": (
+      property: background-color,
+      class: bg-gray,           // 前綴會變成 .bg-gray-
+      values: $grays            // 直接套用你的 $grays
+    ),
+
+    //建立圓角-md尺寸
+    "rounded": map-merge(
+      map-get($utilities, "rounded"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "rounded"), "values"),
+          (
+            "md": $border-radius-md
+          )
+        )
+      )
+    ),
+
+
+
+  )
+);
+
+:root {
+  --#{$prefix}border-radius-md: #{$border-radius-md};
+}
+@import "bootstrap/scss/utilities/api";

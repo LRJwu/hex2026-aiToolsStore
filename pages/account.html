@@ -11,18 +11,19 @@
 <body>
     <%- include('./layout/header'); -%>
         <!-- <h1>會員中心</h1> -->
-        <div class="bg-light py-5 g-4">
+        <div class="bg-light py-4 py-lg-6 g-4">
             <div class="container">
-                <div class="row">
+                <div class="row g-3 g-lg-4">
                     <nav class="col-lg-3">
                         <ul class="list-group">
-                            <li class="list-group-item">
-                                <div class="d-flex flex-lg-wrap justify-content-lg-center">
+                            <li class="list-group-item  px-3 py-4 px-lg-4 py-lg-6">
+                                <!-- profile -->
+                                <div class="d-flex flex-lg-wrap justify-content-lg-center gap-3">
                                     <div class="userImg"><img src="../assets/images/account/avatar.png" alt="使用者頭像" /></div>
                                     <section class="text-lg-center">
-                                        <h2 class="h4">Josh</h2>
-                                        <p>helloworld@gmail.com</p>
-                                        <p class="badge text-bg-success">已驗證</p>
+                                        <h1 class="mb-1 h5">Josh</h1>
+                                        <p  class="mb-1 body-sm text-gray-600">helloworld@gmail.com</p>
+                                        <p  class="mb-0 body-sm badge text-bg-success">已驗證</p>
                                     </section>
                                 </div>
                             </li>
@@ -38,70 +39,75 @@
                         </ul>
                     </nav>
                     <mian class="col-lg-9">
-                        <section>
+                        <section class="">
                             <!-- 個人資料 -->
                             <form>
-                                <section class="bg-white round">
-                                    <h2 class="h4">基本資料</h2>
-                                    <div class="row">
+                                <section class="bg-white rounded p-4 p-lg-6 mb-3 mb-lg-4">
+                                    <h2 class="h5 h4-lg mb-3">基本資料</h2>
+                                    <div class="row g-3">
                                         <div class="col-12 col-lg-6">
-                                            <label for="userName" class="from-label">姓名 <span
-                                                    class="text-danger">*</span></label>
-                                            <input id="userName" name="userName" type="text" class="form-control"
-                                                placeholder="Josh" value="Josh" />
+                                            <div class="d-grid gap-1">
+                                                <label for="userName" class="from-label">姓名 <span class="text-danger">*</span></label>
+                                                <input id="userName" name="userName" type="text" class="form-control"
+                                                    placeholder="Josh" value="Josh" />
+                                            </div>
                                         </div>
                                         <div class="col-12 col-lg-6">
-                                            <label for="nickname" class="from-label">暱稱 <span
-                                                    class="text-danger">*</span></label>
-                                            <input id="nickname" name="nickname" type="text" class="form-control"
-                                                placeholder="請輸入你的暱稱" />
+                                            <div class="d-grid gap-1">
+                                                <label for="nickname" class="from-label">暱稱 <span class="text-danger">*</span></label>
+                                                <input id="nickname" name="nickname" type="text" class="form-control"
+                                                    placeholder="請輸入你的暱稱" />
+                                            </div>
                                         </div>
                                         <div class="col-12 col-lg-6">
-                                            <label for="email" class="from-label">聯絡信箱 <span
-                                                    class="text-danger">*</span></label>
-                                            <input id="email" name="email" type="text" class="form-control"
-                                                placeholder="helloworld@gmail.com" value="helloworld@gmail.com" />
+                                            <div class="d-grid gap-1">
+                                                <label for="email" class="from-label">聯絡信箱 <span class="text-danger">*</span></label>
+                                                <input id="email" name="email" type="text" class="form-control"
+                                                    placeholder="helloworld@gmail.com" value="helloworld@gmail.com" />
+                                            </div>
                                         </div>
                                         <div class="col-12 col-lg-6">
-                                            <label for="phone" class="from-label">聯絡電話 <span
-                                                    class="text-danger">*</span></label>
-                                            <input id="phone" name="phone" type="tel" class="form-control"
-                                                placeholder="0912345678" />
+                                            <div class="d-grid gap-1">
+                                                <label for="phone" class="from-label">聯絡電話 <span class="text-danger">*</span></label>
+                                                <input id="phone" name="phone" type="tel" class="form-control"
+                                                    placeholder="0912345678" />
+                                            </div>
                                         </div>
                                         <div class="col-12 col-lg-6">
-                                            <label for="day" class="from-label">
-                                                <span class="text-danger">*</span></label>
-                                            <input id="day" name="day" type="date" class="form-control" placeholder="請輸入" />
+                                            <div class="d-grid gap-1">
+                                                <label for="birdthday" class="from-label">生日<span class="text-danger">*</span></label>
+                                                <input id="birdthday" name="birdthday" type="date" class="form-control" placeholder="請選擇日期" />
+                                            </div>
                                         </div>
                                     </div>
                                 </section>
-                                <section class="bg-white round">
-                                    <h2 class="h4">通知設定</h2>
-                                    <p class="text-gray">
+                                <section class="bg-white rounded p-4 p-lg-6 mb-3 mb-lg-4">
+                                    <h2 class="h5 h4-lg mb-3">通知設定</h2>
+                                    <p class="body-sm text-gray-600">
                                         通知將寄送到 helloworld@gmai.com
                                         ，如需變更，請至頁面上方的基本資料修改聯絡信箱
                                     </p>
                                     <div class="form-check">
                                         <input id="checkbox1" name="checkbox1" type="checkbox" class="from-check-input" />
                                         <label for="checkbox1" class="from-check-label">工具評價與回饋</label>
-                                        <p class="text-gray">即時掌握使用者留下的評價和回饋</p>
+                                        <p class="body-sm text-gray-600">即時掌握使用者留下的評價和回饋</p>
                                     </div>
                                     <div class="form-check">
                                         <input id="checkbox2" name="checkbox2" type="checkbox" class="from-check-input" />
                                         <label for="checkbox2" class="from-check-label">AI 趨勢與最新工具</label>
-                                        <p class="text-gray">推薦適合你的新 AI 工具</p>
+                                        <p class="body-sm text-gray-600">推薦適合你的新 AI 工具</p>
                                     </div>
                                     <div class="form-check">
                                         <input id="checkbox3" name="checkbox3" type="checkbox" class="from-check-input" />
                                         <label for="checkbox3" class="from-check-label">工具功能更新</label>
-                                        <p class="text-gray">
+                                        <p class="body-sm text-gray-600">
                                             當你訂閱的 AI 工具有新功能或重要更新時，我們會寄信通知你
                                         </p>
                                     </div>
                                     <div class="form-check">
                                         <input id="checkbox4" name="checkbox4" type="checkbox" class="from-check-input" />
                                         <label for="checkbox4" class="from-check-label">活動與優惠資訊</label>
-                                        <p class="text-gray">把握平台限時優惠與活動資訊</p>
+                                        <p class="body-sm text-gray-600">把握平台限時優惠與活動資訊</p>
                                     </div>
                                 </section>
                                 <button type="submit" class="d-block ms-auto btn btn-primary">
@@ -109,15 +115,15 @@
                                 </button>
                             </form>
                         </section>
-                        <section>
+                        <section class="">
                             <!-- 我上架的 AI 工具 -->
-                            <section class="bg-white round">
-                                <h2 class="h4 d-flex justify-content-between">
+                            <section class="bg-white rounded p-4 p-lg-6 mb-3 mb-lg-4">
+                                <h2 class="h5 h4-lg mb-4 mb-lg-5 d-flex justify-content-between align-items-center">
                                     我上架的 AI 工具
                                     <a href="#上架工具頁面.html" class="ms-auto btn btn-primary">上架工具</a>
                                 </h2>
                                 <div class="table-responsive">
-                                    <table class="table">
+                                    <table class="table align-middle text-nowrap">
                                         <thead class="border-bottom border-dark">
                                             <tr class="text-nowrap">
                                                 <td>工具名稱</td>
@@ -133,7 +139,7 @@
                                                 <td>生產力工具</td>
                                                 <td>38</td>
                                                 <td>
-                                                    <p class="badge text-bg-success">已上架</p>
+                                                    <span class="badge text-bg-success">已上架</span>
                                                 <td><a href="#" class="link-primary">查看訂閱用戶</a></td>
                                                 </td>
                                             </tr>
@@ -142,7 +148,7 @@
                                                 <td>內容生成</td>
                                                 <td>0</td>
                                                 <td>
-                                                    <p class="badge text-bg-warning">審核中</p>
+                                                    <span class="badge text-bg-warning">審核中</span>
                                                 <td><a href="#" class="link-primary">查看訂閱用戶</a></td>
                                                 </td>
                                             </tr>
@@ -151,7 +157,7 @@
                                                 <td>資料分析</td>
                                                 <td>125</td>
                                                 <td>
-                                                    <p class="badge text-bg-warning">審核中</p>
+                                                    <span class="badge text-bg-warning">審核中</span>
                                                 <td><a href="#" class="link-primary">查看訂閱用戶</a></td>
                                                 </td>
                                             </tr>
@@ -160,12 +166,12 @@
                                 </div>
                             </section>
                         </section>
-                        <section>
+                        <section class="">
                             <!-- 我訂閱的 AI 工具 -->
-                            <section class="bg-white round">
-                                <h2 class="h4"> 我訂閱的 AI 工具 </h2>
+                            <section class="bg-white rounded p-4 p-lg-6 mb-3 mb-lg-4">
+                                <h2 class="h5 h4-lg mb-3"> 我訂閱的 AI 工具 </h2>
                                 <div class="table-responsive">
-                                    <table class="table">
+                                    <table class="table align-middle text-nowrap">
                                         <thead class="border-bottom border-dark">
                                             <tr class="text-nowrap">
                                                 <td>工具名稱</td>
@@ -180,7 +186,7 @@
                                             <tr>
                                                 <td>WriteCraft AI</td>
                                                 <td>內容生成</td>
-                                                <td><p class="badge text-bg-secondary">免費</p></td>
+                                                <td><span class="badge text-bg-secondary">免費</span></td>
                                                 <td>月繳</td>
                                                 <td>2026/05/15</td>
                                                 <td><a href="#訂閱資料頁.html" class="link-primary">查看訂閱資料</a></td>
@@ -188,7 +194,7 @@
                                             <tr>
                                                 <td>CodePilot Pro</td>
                                                 <td>程式開發</td>
-                                                <td><p class="badge text-bg-success">基礎</p></td>
+                                                <td><span class="badge text-bg-success">基礎</span></td>
                                                 <td>月繳</td>
                                                 <td>2026/05/15</td>
                                                 <td><a href="#訂閱資料頁.html" class="link-primary">查看訂閱資料</a></td>
@@ -196,7 +202,7 @@
                                             <tr>
                                                 <td>SEO Radar</td>
                                                 <td>資料分析</td>
-                                                <td><p class="badge text-bg-warning">進階</p></td>
+                                                <td><span class="badge text-bg-warning">進階</span></td>
                                                 <td>月繳</td>
                                                 <td>2026/05/15</td>
                                                 <td><a href="#訂閱資料頁.html" class="link-primary">查看訂閱資料</a></td>
