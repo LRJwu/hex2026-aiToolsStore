@@ -2,8 +2,18 @@
     display: flex;
     gap:map-get($spacers,2);
 }
-.btn-icon {
-  @include button-variant(
+.btn-icon,.btn-dark-icon {
+  @include button-size($input-btn-padding-x-sm, $input-btn-padding-x-sm, $input-btn-font-size-sm, $border-radius-pill);
+  & .bi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(1em * var(--bs-btn-line-height));
+    height: calc(1em * var(--bs-btn-line-height));
+  }
+}
+.btn-icon{
+    @include button-variant(
     $background:transparent,
     $border:transparent,
     $color: $gray-700,
@@ -13,16 +23,24 @@
     $disabled-border: transparent,
     $disabled-color: $gray-500
   );
-  @include button-size($input-btn-padding-x-sm, $input-btn-padding-x-sm, $input-btn-font-size-sm, $border-radius-pill);
   &:focus{
     --bs-btn-bg: var(--bs-gray-100);;
     --bs-btn-border-color: var(--bs-gray-300);;
   }
-  & .bi {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: calc(1em * var(--bs-btn-line-height));
-    height: calc(1em * var(--bs-btn-line-height));
+}
+.btn-dark-icon{
+    @include button-variant(
+    $background:transparent,
+    $border:transparent,
+    $color: $white,
+    $active-background:$purple-100,
+    $active-border:$neutral-300,
+    $disabled-background: transparent,
+    $disabled-border: transparent,
+    $disabled-color: $neutral-500
+  );
+  &:focus{
+    --bs-btn-bg: rgba(255,255,255,8%);
+    --bs-btn-border-color: rgba(255,255,255,12%);
   }
 }
