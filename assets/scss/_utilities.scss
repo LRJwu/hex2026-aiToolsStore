@@ -27,6 +27,19 @@ $utilities: map-merge(                    // 使用 Sass 的 map-merge 函式，
             "purple-100": $purple-100,
             "purple-200": $purple-200,
             "purple-300": $purple-300,
+            //建立顏色-通知系列
+            "success-100": $green-100,
+            "success-200": $green-200,
+            "success-300": $green-300,
+            "warning-100": $yellow-100,
+            "warning-200": $yellow-200,
+            "warning-300": $yellow-300,
+            "danger-100": $red-100,
+            "danger-200": $red-200,
+            "danger-300": $red-300,
+            "info-100": $cyan-100,
+            "info-200": $cyan-200,
+            "info-300": $cyan-300,
           )
         )
       )
@@ -49,6 +62,19 @@ $utilities: map-merge(                    // 使用 Sass 的 map-merge 函式，
             "purple-100": $purple-100,
             "purple-200": $purple-200,
             "purple-300": $purple-300,
+            //建立顏色-通知系列
+            "success-100": $green-100,
+            "success-200": $green-200,
+            "success-300": $green-300,
+            "warning-100": $yellow-100,
+            "warning-200": $yellow-200,
+            "warning-300": $yellow-300,
+            "danger-100": $red-100,
+            "danger-200": $red-200,
+            "danger-300": $red-300,
+            "info-100": $cyan-100,
+            "info-200": $cyan-200,
+            "info-300": $cyan-300,
           )
         )
       )
