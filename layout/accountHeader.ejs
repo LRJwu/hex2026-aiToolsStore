@@ -1,0 +1,99 @@
+<header class="sticky-top bg-white">
+    <div class="container">
+        <nav class="navbar justify-content-start">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/images/logo.png" alt="Logo" class="d-inline-block align-text-top" />
+            </a>
+            <div class="d-none d-lg-flex align-items-center gap-3 flex-grow-1">
+                <div class="dropdown">
+                    <a class="btn dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">探索 AI 工具 <i class="bi bi-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">內容生成</a></li>
+                        <li><a href="#" class="dropdown-item">視覺設計</a></li>
+                        <li><a href="#" class="dropdown-item">影像製作</a></li>
+                        <li><a href="#" class="dropdown-item">程式開發</a></li>
+                        <li><a href="#" class="dropdown-item">教育與學習</a></li>
+                        <li><a href="#" class="dropdown-item">資料分析</a></li>
+                        <li><a href="#" class="dropdown-item">生產力工具</a></li>
+                        <li><a href="#" class="dropdown-item">音樂創作</a></li>
+                    </ul>
+                </div>
+                <from>
+                    <div class="input-group search">
+                        <input type="text" class="form-control" placeholder="輸入工具名稱、功能或關鍵字" />
+                        <button class="btn btn-outline-secondary" type="button">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </from>
+                <button type="button" class="btn btn-outline-primary ms-auto">
+                    <i class="bi bi-person"></i>會員中心
+                </button>
+            </div>
+            <div class="ms-auto d-flex gap-2 d-lg-none">
+                <a class="btn btn-icon" href="#collapseSearch" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSearch"><i class="bi bi-search"></i></a>
+                <a class="btn btn-icon" href="#offcanvasNavbar" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"><i class="bi bi-list"></i></a>
+            </div>
+        </nav>
+    </div>
+    <div id="collapseSearch" class="collapse bg-light w-100 border-y">
+        <form class="d-flex justify-content-center align-items-center w-100 p-2h px-3 gap-1" role="search">
+            <div class="input-group search">
+                <input type="text" class="form-control" placeholder="輸入工具名稱、功能或關鍵字" />
+                <button class="btn btn-outline-secondary" type="button">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+            <a class="btn btn-icon" href="#collapseSearch" data-bs-toggle="collapse" data-bs-target="#collapseSearch">
+                <i class="bi bi-x-lg"></i></a>
+        </form>
+    </div>
+</header>
+<div id="offcanvasNavbar" class="offcanvas offcanvas-end g-3">
+    <div class="offcanvas-header pb-0">
+        <button class="btn-close btn btn-icon m-0 ms-auto" type="button" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body pt-0">
+        <ul class="nav flex-column gap-2">
+            <li class="nav-items p-2h border-bottom">
+                <h3 class="h6 mb-0">探索 AI 工具</h3>
+            </li>
+            <li class="nav-items">
+                <a href="#" class="nav-link text-dark">內容生成</a>
+            </li>
+            <li class="nav-items">
+                <a href="#" class="nav-link text-dark">視覺設計</a>
+            </li>
+            <li class="nav-items">
+                <a href="#" class="nav-link text-dark">影像製作</a>
+            </li>
+            <li class="nav-items">
+                <a href="#" class="nav-link text-dark">程式開發</a>
+            </li>
+            <li class="nav-items">
+                <a href="#" class="nav-link text-dark">教育與學習</a>
+            </li>
+            <li class="nav-items">
+                <a href="#" class="nav-link text-dark">資料分析</a>
+            </li>
+            <li class="nav-items">
+                <a href="#" class="nav-link text-dark">生產力工具</a>
+            </li>
+            <li class="nav-items">
+                <a href="#" class="nav-link text-dark">音樂創作</a>
+            </li>
+        </ul>
+    </div>
+    <form class="p-5 pt-3">
+        <button type="button" class="btn btn-primary w-100 d-none">
+            登入/註冊
+        </button>
+        <button type="button" class="btn btn-primary w-100">
+            <i class="bi bi-person"></i>會員中心
+        </button>
+    </form>
+</div>
