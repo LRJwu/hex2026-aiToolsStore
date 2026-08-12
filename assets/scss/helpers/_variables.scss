@@ -56,7 +56,7 @@ $grays: (
 // scss-docs-start color-variables
 $blue:    #0D6EFD;//有修改，原本：#0d6efd !default;
 $indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
+$purple:  #B28DE9;//有修改，原本：#6f42c1 !default;
 $pink:    #d63384 !default;
 $red:     #DC3545;//有修改，原本：#dc3545 !default;
 $orange:  #fd7e14 !default;
@@ -114,9 +114,9 @@ $indigo-700: shade-color($indigo, 40%) !default;
 $indigo-800: shade-color($indigo, 60%) !default;
 $indigo-900: shade-color($indigo, 80%) !default;
 
-$purple-100: tint-color($purple, 80%) !default;
-$purple-200: tint-color($purple, 60%) !default;
-$purple-300: tint-color($purple, 40%) !default;
+$purple-100: #EADCFF;//有修改，原本：tint-color($purple, 80%) !default;
+$purple-200: #D2B4FE;//有修改，原本：tint-color($purple, 60%) !default;
+$purple-300: #B28DE9;//有修改，原本：tint-color($purple, 40%) !default;
 $purple-400: tint-color($purple, 20%) !default;
 $purple-500: $purple !default;
 $purple-600: shade-color($purple, 20%) !default;
@@ -331,6 +331,7 @@ $dark:          $gray-900 !default;
 $theme-colors: (
   "primary":    $primary,
   "neu":        $neu,
+  "purple":        $purple,
   "secondary":  $secondary,
   "success":    $success,
   "info":       $info,
