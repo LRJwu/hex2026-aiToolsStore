@@ -1,5 +1,7 @@
 .btn{
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap:map-get($spacers,2);
 }
 .btn-icon,.btn-dark-icon {

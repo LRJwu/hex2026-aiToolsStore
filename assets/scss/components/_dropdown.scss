@@ -12,3 +12,17 @@
         display: none;
     }
 }
+.nav-dark .nav-link{
+    --bs-nav-link-color:$neutral-300;
+    &:hover, &:focus,&:active, &.active{
+        background:$transparent-100;
+        border-radius: $border-radius-sm;
+        --bs-nav-link-hover-color:white;
+    }
+    &:active, &.active{
+        color:#{$purple-200};
+    }
+    &:disabled, &.disabled{
+        color:#{$neutral-200};
+    }
+}
