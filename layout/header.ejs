@@ -9,8 +9,8 @@
                     <a class="btn text-white dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">探索 AI 工具 <i class="bi bi-chevron-down"></i></a>
                     <ul class="dropdown-menu dropdown-menu-dark backdrop-blur show">
-                        <li><a href="#" class="dropdown-item active">內容生成</a></li>
-                        <li><a href="#" class="dropdown-item" disabled>視覺設計</a></li>
+                        <li><a href="#" class="dropdown-item">內容生成</a></li>
+                        <li><a href="#" class="dropdown-item">視覺設計</a></li>
                         <li><a href="#" class="dropdown-item">影像製作</a></li>
                         <li><a href="#" class="dropdown-item">程式開發</a></li>
                         <li><a href="#" class="dropdown-item">教育與學習</a></li>
@@ -21,10 +21,11 @@
                 </div>
                 <from>
                     <div class="input-group search">
-                        <input type="text" class="form-control" placeholder="輸入工具名稱、功能或關鍵字" />
-                        <button class="btn btn-outline-secondary" type="button">
-                            <i class="bi bi-search"></i>
-                        </button>
+                        <span class="input-group-text"><i class="bi bi-search"></i></span>
+                        <!-- <div class="form-floating"> -->
+                            <input  id="keyword" type="text" class="form-control border-start-0 ps-0" placeholder="輸入工具名稱、功能或關鍵字" />        
+                            <!-- <label for="keyword">輸入工具名稱、功能或關鍵字</label> -->
+                        <!-- </div> -->
                     </div>
                 </from>
                 <button type="button" class="btn btn-outline-purple ms-auto">
