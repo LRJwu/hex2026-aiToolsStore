@@ -7,9 +7,11 @@ footer{
   border-top: 1px solid $gray-600;
   padding-top: map-get($spacers, 4);
   text-align: center;
-  line-height: calc(1.5em + map-get($spacers, 1) / 2);
+  display: grid;
+  gap:map-get($spacers,1);
+//   line-height: calc(1.5em + map-get($spacers, 1) / 2);
  }
- & p:last-child{
+ & p{
   margin-bottom: 0;
  }
 }
