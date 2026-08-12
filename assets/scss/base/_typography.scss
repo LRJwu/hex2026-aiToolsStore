@@ -2,6 +2,18 @@
 body{
     letter-spacing: 5%;
 }
+h1:only-of-type,
+h2:only-of-type,
+h3:only-of-type,
+h4:only-of-type,
+h5:only-of-type,
+h6:only-of-type {
+  margin-bottom: 0;
+}
+p:only-of-type {
+  margin-bottom: 0;
+}
+
 .body-xl{
     font-size: 20px;
     line-height: $line-height-base;

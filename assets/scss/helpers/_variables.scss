@@ -451,7 +451,9 @@ $spacers: (
   4: $spacer * 1.5,//24px
   5: $spacer * 2,//32px//有修改，原本：* 3,//48px
   6: $spacer * 3,//48px//有修改，新增
-  7: $spacer * 4,//64px//有修改，新增  
+  7: $spacer * 4,//64px//有修改，新增
+  8: 100px,//100px//有修改，新增
+  9: $spacer * 75,//120px//有修改，新增
 ) !default;
 // scss-docs-end spacer-variables-maps
 
