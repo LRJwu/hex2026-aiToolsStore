@@ -26,8 +26,8 @@
     $disabled-color: $gray-500
   );
   &:focus{
-    --bs-btn-bg: var(--bs-gray-100);;
-    --bs-btn-border-color: var(--bs-gray-300);;
+    --bs-btn-bg: var(--bs-gray-100);
+    --bs-btn-border-color: var(--bs-gray-300);
   }
 }
 .btn-dark-icon{

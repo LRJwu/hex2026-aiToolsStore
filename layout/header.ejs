@@ -6,11 +6,11 @@
             </a>
             <div class="d-none d-lg-flex align-items-center gap-3 flex-grow-1">
                 <div class="dropdown">
-                    <a class="btn dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown"
+                    <a class="btn text-white dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">探索 AI 工具 <i class="bi bi-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#" class="dropdown-item">內容生成</a></li>
-                        <li><a href="#" class="dropdown-item">視覺設計</a></li>
+                    <ul class="dropdown-menu dropdown-menu-dark backdrop-blur show">
+                        <li><a href="#" class="dropdown-item active">內容生成</a></li>
+                        <li><a href="#" class="dropdown-item" disabled>視覺設計</a></li>
                         <li><a href="#" class="dropdown-item">影像製作</a></li>
                         <li><a href="#" class="dropdown-item">程式開發</a></li>
                         <li><a href="#" class="dropdown-item">教育與學習</a></li>
@@ -27,7 +27,7 @@
                         </button>
                     </div>
                 </from>
-                <button type="button" class="btn btn-outline-primary ms-auto">
+                <button type="button" class="btn btn-outline-purple ms-auto">
                     <i class="bi bi-person"></i>會員中心
                 </button>
             </div>
@@ -52,10 +52,10 @@
         </form>
     </div>
 </header>
-<div id="offcanvasNavbar" class="show offcanvas offcanvas-end bg-trn backdrop-blur text-white g-3">
+<div id="offcanvasNavbar" class="offcanvas offcanvas-end bg-trn backdrop-blur text-white g-3">
     <div class="offcanvas-header pb-0">
-        <button class="btn-close btn btn-dark-icon m-0 ms-auto" type="button" data-bs-dismiss="offcanvas"
-            aria-label="Close"></button>
+        <a class="btn btn-dark-icon ms-auto" href="#offcanvasNavbar" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <i class="bi bi-x-lg"></i></a>
     </div>
     <div class="offcanvas-body pt-0">
         <ul class="nav nav-dark flex-column gap-2">
