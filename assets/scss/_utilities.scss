@@ -9,7 +9,7 @@ $utilities: map-merge(                    // 使用 Sass 的 map-merge 函式，
   $utilities,                             // 第一個參數：原本 Bootstrap 的 $utilities 陣列
   (                                       // 第二個參數：你要新增或覆蓋的設定
     //建立顏色-neutral系列
-    // 生成 .bg-neu-100 ~ .bg-neu-600
+    // 生成 .bg-色系-100 ~ .bg-色系-600
     "background-color": map-merge(
       map-get($utilities, "background-color"),
       (
@@ -27,6 +27,9 @@ $utilities: map-merge(                    // 使用 Sass 的 map-merge 函式，
             "purple-100": $purple-100,
             "purple-200": $purple-200,
             "purple-300": $purple-300,
+            //建立顏色-透明色系列
+            "trn-100": $transparent-100,
+            "trn-200": $transparent-200,
             //建立顏色-通知系列
             "success-100": $green-100,
             "success-200": $green-200,
@@ -44,7 +47,7 @@ $utilities: map-merge(                    // 使用 Sass 的 map-merge 函式，
         )
       )
     ),
-    // 生成 .text-neu-100 ~ .text-neu-600
+    // 生成 .text-色系-100 ~ .text-色系-600
     "color": map-merge(
       map-get($utilities, "color"),
       (
@@ -62,6 +65,9 @@ $utilities: map-merge(                    // 使用 Sass 的 map-merge 函式，
             "purple-100": $purple-100,
             "purple-200": $purple-200,
             "purple-300": $purple-300,
+            //建立顏色-透明色系列
+            "trn-100": $transparent-100,
+            "trn-200": $transparent-200,
             //建立顏色-通知系列
             "success-100": $green-100,
             "success-200": $green-200,
@@ -95,7 +101,16 @@ $utilities: map-merge(                    // 使用 Sass 的 map-merge 函式，
       class: bg-gray,           // 前綴會變成 .bg-gray-
       values: $grays            // 直接套用你的 $grays
     ),
-    
+    //新增透明度樣式
+    "opacity": map-merge(
+      map-get($utilities, "opacity"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "opacity"), "values"),
+          ( 100: .08, 200: .12 )
+        )
+      )
+    ),
     //新增滑鼠樣式
     "cursor": (
       property: cursor,

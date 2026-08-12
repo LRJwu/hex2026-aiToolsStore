@@ -1,0 +1,10 @@
+[class*="-trn"][class*="-trn"]{
+    --bs-bg-opacity: .12;
+}
+//模糊效果
+.blur{
+    filter: blur(24px);
+}
+.backdrop-blur{
+    backdrop-filter: blur(24px);
+}
