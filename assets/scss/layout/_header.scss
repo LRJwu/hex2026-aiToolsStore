@@ -2,7 +2,12 @@ header,footer {
   & .navbar-brand > * {
     max-height: 24px;
   }
-  & .input-group > .form-control, .input-group > .form-select, .input-group > .form-floating{
-    min-width: 259px;
+  
+}
+@include media-breakpoint-up(lg){
+  header,footer {
+    & .input-group > .form-control, .input-group > .form-select, .input-group > .form-floating{
+      min-width: 259px;
+    }
   }
 }
