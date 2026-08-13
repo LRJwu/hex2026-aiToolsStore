@@ -26,7 +26,13 @@ p:only-of-type {
     font-size: 14px;
     line-height: $line-height-base;
 }
-
+.line-truncate{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+}
 // 遍歷所有斷點 (xs, sm, md, lg, xl, xxl)
 @each $breakpoint, $value in $grid-breakpoints {
   // 建立斷點 infix，例如 "" (針對 xs) 或 "-md"

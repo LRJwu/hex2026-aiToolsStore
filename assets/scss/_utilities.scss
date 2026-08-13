@@ -8,6 +8,14 @@
 $utilities: map-merge(                    // 使用 Sass 的 map-merge 函式，將舊有的 $utilities 與新的設定合併
   $utilities,                             // 第一個參數：原本 Bootstrap 的 $utilities 陣列
   (                                       // 第二個參數：你要新增或覆蓋的設定
+    //設定文字的斷點
+    "font-size":
+      map-merge(
+        map-get($utilities, "font-size"),
+        (
+          responsive: true,
+        )
+      ),
     //建立顏色-neutral系列
     // 生成 .bg-色系-100 ~ .bg-色系-600
     "background-color": map-merge(
