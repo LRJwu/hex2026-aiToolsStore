@@ -110,12 +110,25 @@ $utilities: map-merge(                    // 使用 Sass 的 map-merge 函式，
       values: $grays            // 直接套用你的 $grays
     ),
     //新增透明度樣式
+    "bg-opacity": (
+      css-var: true,
+      class: bg-opacity,
+      values: (
+        10: .1,
+        25: .25,
+        50: .5,
+        75: .75,
+        100: .08,
+        200: .12,
+        1:1
+      )
+    ),
     "opacity": map-merge(
       map-get($utilities, "opacity"),
       (
         values: map-merge(
           map-get(map-get($utilities, "opacity"), "values"),
-          ( 100: .08, 200: .12 )
+          ( 100: 0.08, 200: 0.12 )
         )
       )
     ),
