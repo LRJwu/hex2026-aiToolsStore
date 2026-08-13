@@ -1,21 +1,18 @@
 <!doctype html>
 <html lang="zh-TW">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
-    <title>首頁</title>
-  </head>
 
-  <body>
-    <%- include('./layout/header'); -%>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <title>首頁</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
     <main class="bg-neu text-white">
-      <section
-        class="container-fluid bg-1 vh-100 text-center d-flex justify-content-center align-items-center"
-      >
+      <!-- hero banner刊頭 -->
+      <section class="container-fluid bg-1 vh-100 text-center d-flex justify-content-center align-items-center">
         <div class="container px-0">
           <h1 class="display-1 mb-4">
             探索適合你的 AI 工具<br />讓工作與生活更有效率
@@ -30,29 +27,23 @@
             <div class="input-group search">
               <span class="input-group-text"><i class="bi bi-search"></i></span>
               <!-- <div class="form-floating"> -->
-              <input
-                id="keyword"
-                type="text"
-                class="form-control border-start-0 ps-0"
-                placeholder="輸入工具名稱、功能或關鍵字"
-              />
+              <input id="keyword" type="text" class="form-control border-start-0 ps-0" placeholder="輸入工具名稱、功能或關鍵字" />
               <!-- <label for="keyword">輸入工具名稱、功能或關鍵字</label> -->
               <!-- </div> -->
             </div>
           </from>
         </div>
       </section>
+      <!--ＥＮＤ hero banner刊頭 -->
       <section class="container-fluid bg-2 py-7 py-lg-8">
         <div class="container px-0">
           <h2 class="mb-2">工具分類</h2>
           <h3 class="body-md text-neu-200 mb-4">
             依據使用情境快速找到適合你的 AI 工具
           </h3>
-          <div class="row text-center g-3">
-            <div class="col-6 col-md-4 col-lg-3">
-              <div
-                class="d-grid gap-3 rounded-1 border-trn-200 bg-trn-100 backdrop-blur px-3 px-lg-4 py-4 py-lg-5"
-              >
+          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 text-center g-3 g-lg-4">
+            <div class="col">
+              <div class="crad h-100 gap-3 rounded-1 border-trn-200 bg-trn-100 backdrop-blur px-3 px-lg-4 py-4 py-lg-5">
                 <i class="bi bi-pen"> </i>
                 <div class="d-grid gap-1">
                   <h4 class="h6">內容生成</h4>
@@ -62,10 +53,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <div
-                class="d-grid gap-3 rounded-1 border-trn-200 bg-trn-100 backdrop-blur px-3 py-4 py-lg-5"
-              >
+            <div class="col">
+              <div class="crad h-100 gap-3 rounded-1 border-trn-200 bg-trn-100 backdrop-blur px-3 py-4 py-lg-5">
                 <i class="bi bi-image"> </i>
                 <div class="d-grid gap-1">
                   <h4 class="h6">視覺設計</h4>
@@ -75,10 +64,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <div
-                class="d-grid gap-3 rounded-1 border-trn-200 bg-trn-100 backdrop-blur px-3 py-4 py-lg-5"
-              >
+            <div class="col">
+              <div class="crad h-100 gap-3 rounded-1 border-trn-200 bg-trn-100 backdrop-blur px-3 py-4 py-lg-5">
                 <i class="bi bi-camera-video"> </i>
                 <div class="d-grid gap-1">
                   <h4 class="h6">影像製作</h4>
@@ -88,10 +75,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <div
-                class="d-grid gap-3 rounded-1 border-trn-200 bg-trn-100 backdrop-blur px-3 py-4 py-lg-5"
-              >
+            <div class="col">
+              <div class="crad h-100 gap-3 rounded-1 border-trn-200 bg-trn-100 backdrop-blur px-3 py-4 py-lg-5">
                 <i class="bi bi-code-slash"> </i>
                 <div class="d-grid gap-1">
                   <h4 class="h6">程式開發</h4>
@@ -99,10 +84,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <div
-                class="d-grid gap-3 rounded-1 border-trn-200 bg-trn-100 backdrop-blur px-3 py-4 py-lg-5"
-              >
+            <div class="col">
+              <div class="crad h-100 gap-3 rounded-1 border-trn-200 bg-trn-100 backdrop-blur px-3 py-4 py-lg-5">
                 <i class="bi bi-card-list"> </i>
                 <div class="d-grid gap-1">
                   <h4 class="h6">教育與學習</h4>
@@ -112,10 +95,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <div
-                class="d-grid gap-3 rounded-1 border-trn-200 bg-trn-100 backdrop-blur px-3 py-4 py-lg-5"
-              >
+            <div class="col">
+              <div class="crad h-100 gap-3 rounded-1 border-trn-200 bg-trn-100 backdrop-blur px-3 py-4 py-lg-5">
                 <i class="bi bi-diagram-3"> </i>
                 <div class="d-grid gap-1">
                   <h4 class="h6">生產力工具</h4>
@@ -125,10 +106,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <div
-                class="d-grid gap-3 rounded-1 border-trn-200 bg-trn-100 backdrop-blur px-3 py-4 py-lg-5"
-              >
+            <div class="col">
+              <div class="crad h-100 gap-3 rounded-1 border-trn-200 bg-trn-100 backdrop-blur px-3 py-4 py-lg-5">
                 <i class="bi bi-music-note-beamed"> </i>
                 <div class="d-grid gap-1">
                   <h4 class="h6">音樂創作</h4>
@@ -138,10 +117,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <div
-                class="d-grid gap-3 rounded-1 border-trn-200 bg-trn-100 backdrop-blur px-3 py-4 py-lg-5"
-              >
+            <div class="col">
+              <div class="crad h-100 gap-3 rounded-1 border-trn-200 bg-trn-100 backdrop-blur px-3 py-4 py-lg-5">
                 <i class="bi bi-graph-up"> </i>
                 <div class="d-grid gap-1">
                   <h4 class="h6">資料分析</h4>
@@ -160,98 +137,106 @@
           <h3 class="body-md text-neu-200 mb-4">
             不知道從哪裡開始？先看看編輯為你精選的熱門工具
           </h3>
-          <ol class="row list-unstyled g-3">
-            <li class="col-lg-6">
-              <div class="card bg-trn backdrop-blur text-white">
-                <div class="card-num">1</div>
-                <div class="card-brand">
-                  <img src="../assets/images/index/PromptLab.png" alt="logo:PromptLab" />
-                </div>
-                <div class="card-body">
-                  <h4 class="mb-1">PromptLab</h4>
-                  <h5 class="body-md text-neu-200 mb-2">內容生成</h5>
-                  <p class="body-dm">
-                    協助你建立、整理不同的 AI
-                    Prompt，無論是寫作、設計或開發，都能快速找到最適合的 Prompt
-                    組合。
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="col-lg-6">
-              <div class="card bg-trn backdrop-blur text-white">
-                <div class="card-num">2</div>
-                <div class="card-brand">
-                  <img src="../assets/images/index/VoiceNova.png" alt="logo:VoiceNova" />
-                </div>
-                <div class="card-body">
-                  <h4 class="mb-1">VoiceNova</h4>
-                  <h5 class="body-md text-neu-200 mb-2">音樂創作</h5>
-                  <p class="body-dm">
-                    能將文字內容轉換為接近真人的語音，適合製作教學影片旁白、Podcast
-                    或產品展示內容。
-                  </p>
+          <ol class="list-unstyled overflow-x-auto flex-nowrap row row-cols-lg-2 g-3 g-lg-4">
+            <li class="col-9">
+              <div class="card h-100 bg-trn backdrop-blur text-white">
+                <div class="card-body d-flex flex-column flex-lg-row align-items-lg-center g-3 g-lg-4">
+                  <h6 class="h5 card-num">1</h6>
+                  <div class="card-brand">
+                    <img src="../assets/images/index/PromptLab.png" alt="logo:PromptLab" />
+                  </div>
+                  <div class="card-info">
+                    <h4 class="mb-1">PromptLab</h4>
+                    <h5 class="body-md text-neu-200 mb-2">內容生成</h5>
+                    <p class="body-dm">
+                      協助你建立、整理不同的 AI Prompt，無論是寫作、設計或開發，都能快速找到最適合的 Prompt組合。
+                    </p>
+                  </div>
                 </div>
               </div>
             </li>
-            <li class="col-lg-6">
-              <div class="card bg-trn backdrop-blur text-white">
-                <div class="card-num">3</div>
-                <div class="card-brand">
-                  <img src="../assets/images/index/DesignQuick.png" alt="logo:DesignQuick" />
-                </div>
-                <div class="card-body">
-                  <h4 class="mb-1">DesignQuick</h4>
-                  <h5 class="body-md text-neu-200 mb-2">影像製作</h5>
-                  <p class="body-dm">
-                    讓沒有設計背景的使用者，也能快速產出社群貼文、簡報封面與視覺素材。
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="col-lg-6">
-              <div class="card bg-trn backdrop-blur text-white">
-                <div class="card-num">4</div>
-                <div class="card-brand">
-                  <img src="../assets/images/index/SEO Radar.png" alt="logo:SEO Radar" />
-                </div>
-                <div class="card-body">
-                  <h4 class="mb-1">SEO Radar</h4>
-                  <h5 class="body-md text-neu-200 mb-2">資料分析</h5>
-                  <p class="body-dm">
-                    持續追蹤關鍵字排名、流量變化與技術問題，並提供清楚的優化建議，協助你逐步改善搜尋引擎表現。
-                  </p>
+            <li class="col-9">
+              <div class="card h-100 bg-trn backdrop-blur text-white">
+                <div class="card-body d-flex flex-column flex-lg-row align-items-lg-center g-3 g-lg-4">
+                  <h6 class="h5 card-num">2</h6>
+                  <div class="card-brand">
+                    <img src="../assets/images/index/VoiceNova.png" alt="logo:VoiceNova" />
+                  </div>
+                  <div class="card-info">
+                    <h4 class="mb-1">VoiceNova</h4>
+                    <h5 class="body-md text-neu-200 mb-2">音樂創作</h5>
+                    <p class="body-dm">
+                      能將文字內容轉換為接近真人的語音，適合製作教學影片旁白、Podcast或產品展示內容。
+                    </p>
+                  </div>
                 </div>
               </div>
             </li>
-            <li class="col-lg-6">
-              <div class="card bg-trn backdrop-blur text-white">
-                <div class="card-num">5</div>
-                <div class="card-brand">
-                  <img src="../assets/images/index/Meeting Notes AI.png" alt="logo:Meeting Notes AI" />
-                </div>
-                <div class="card-body">
-                  <h4 class="mb-1">Meeting Notes AI</h4>
-                  <h5 class="body-md text-neu-200 mb-2">生產力工具</h5>
-                  <p class="body-dm">
-                    將會議內容轉換成結構化筆記，標示重點與待辦事項，幫助團隊在會後快速對齊共識並持續追蹤進度。
-                  </p>
+            <li class="col-9">
+              <div class="card h-100 bg-trn backdrop-blur text-white">
+                <div class="card-body d-flex flex-column flex-lg-row align-items-lg-center g-3 g-lg-4">
+                  <h6 class="h5 card-num">3</h6>
+                  <div class="card-brand">
+                    <img src="../assets/images/index/DesignQuick.png" alt="logo:DesignQuick" />
+                  </div>
+                  <div class="card-info">
+                    <h4 class="mb-1">DesignQuick</h4>
+                    <h5 class="body-md text-neu-200 mb-2">影像製作</h5>
+                    <p class="body-dm">
+                      讓沒有設計背景的使用者，也能快速產出社群貼文、簡報封面與視覺素材。
+                    </p>
+                  </div>
                 </div>
               </div>
             </li>
-            <li class="col-lg-6">
-              <div class="card bg-trn backdrop-blur text-white">
-                <div class="card-num">6</div>
-                <div class="card-brand">
-                  <img src="../assets/images/index/ChatFlow Builder.png" alt="logo:ChatFlow Builder" />
+            <li class="col-9">
+              <div class="card h-100 bg-trn backdrop-blur text-white">
+                <div class="card-body d-flex flex-column flex-lg-row align-items-lg-center g-3 g-lg-4">
+                  <h6 class="h5 card-num">4</h6>
+                  <div class="card-brand">
+                    <img src="../assets/images/index/SEO Radar.png" alt="logo:SEO Radar" />
+                  </div>
+                  <div class="card-info">
+                    <h4 class="mb-1">SEO Radar</h4>
+                    <h5 class="body-md text-neu-200 mb-2">資料分析</h5>
+                    <p class="body-dm">
+                      持續追蹤關鍵字排名、流量變化與技術問題，並提供清楚的優化建議，協助你逐步改善搜尋引擎表現。
+                    </p>
+                  </div>
                 </div>
-                <div class="card-body">
-                  <h4 class="mb-1">ChatFlow Builder</h4>
-                  <h5 class="body-md text-neu-200 mb-2">程式開發</h5>
-                  <p class="body-dm">
-                    讓你無需撰寫程式碼，也能建立客服或內部使用的 AI
-                    聊天流程，適合需要快速部署對話型工具的團隊。
-                  </p>
+              </div>
+            </li>
+            <li class="col-9">
+              <div class="card h-100 bg-trn backdrop-blur text-white">
+                <div class="card-body d-flex flex-column flex-lg-row align-items-lg-center g-3 g-lg-4">
+                  <h6 class="h5 card-num">5</h6>
+                  <div class="card-brand">
+                    <img src="../assets/images/index/Meeting Notes AI.png" alt="logo:Meeting Notes AI" />
+                  </div>
+                  <div class="card-info">
+                    <h4 class="mb-1">Meeting Notes AI</h4>
+                    <h5 class="body-md text-neu-200 mb-2">生產力工具</h5>
+                    <p class="body-dm">
+                      將會議內容轉換成結構化筆記，標示重點與待辦事項，幫助團隊在會後快速對齊共識並持續追蹤進度。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-9">
+              <div class="card h-100 bg-trn backdrop-blur text-white">
+                <div class="card-body d-flex flex-column flex-lg-row align-items-lg-center g-3 g-lg-4">
+                  <h6 class="h5 card-num">6</h6>
+                  <div class="card-brand">
+                    <img src="../assets/images/index/ChatFlow Builder.png" alt="logo:ChatFlow Builder" />
+                  </div>
+                  <div class="card-info">
+                    <h4 class="mb-1">ChatFlow Builder</h4>
+                    <h5 class="body-md text-neu-200 mb-2">程式開發</h5>
+                    <p class="body-dm">
+                      讓你無需撰寫程式碼，也能建立客服或內部使用的 AI 聊天流程，適合需要快速部署對話型工具的團隊。
+                    </p>
+                  </div>
                 </div>
               </div>
             </li>
@@ -264,14 +249,11 @@
           <h3 class="text-center body-md text-neu-200 mb-4">
             看看大家最近都在關注哪些新工具
           </h3>
-          <div class="row g-3 g-lg-4">
-            <div class="col-md-4">
-              <div class="card bg-trn-100 text-white p-3 p-lg-4">
+          <ul class="list-unstyled overflow-x-auto flex-nowrap row row-cols-lg-3 g-3 g-lg-4">
+            <li class="col-9">
+              <div class="card h-100 bg-trn-100 text-white p-3 p-lg-4">
                 <div class="card-brand">
-                  <img
-                    src="../assets/images/index/WriteCraft AI.png"
-                    alt="logo:WriteCraft AI"
-                  />
+                  <img src="../assets/images/index/WriteCraft AI.png" alt="logo:WriteCraft AI" />
                 </div>
                 <div class="card-body">
                   <h4>WriteCraft AI</h4>
@@ -281,14 +263,11 @@
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card bg-trn-100 text-white p-3 p-lg-4">
+            </li>
+            <li class="col-9">
+              <div class="card h-100 bg-trn-100 text-white p-3 p-lg-4">
                 <div class="card-brand">
-                  <img
-                    src="../assets/images/index/PixelMind Studio.png"
-                    alt="logo:PixelMind Studio"
-                  />
+                  <img src="../assets/images/index/PixelMind Studio.png" alt="logo:PixelMind Studio" />
                 </div>
                 <div class="card-body">
                   <h4>PixelMind Studio</h4>
@@ -298,14 +277,11 @@
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card bg-trn-100 text-white p-3 p-lg-4">
+            </li>
+            <li class="col-9">
+              <div class="card h-100 bg-trn-100 text-white p-3 p-lg-4">
                 <div class="card-brand">
-                  <img
-                    src="../assets/images/index/CodePilot Pro.png"
-                    alt="logo:CodePilot Pro"
-                  />
+                  <img src="../assets/images/index/CodePilot Pro.png" alt="logo:CodePilot Pro" />
                 </div>
                 <div class="card-body">
                   <h4>CodePilot Pro</h4>
@@ -316,14 +292,11 @@
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card bg-trn-100 text-white p-3 p-lg-4">
+            </li>
+            <li class="col-9">
+              <div class="card h-100 bg-trn-100 text-white p-3 p-lg-4">
                 <div class="card-brand">
-                  <img
-                    src="../assets/images/index/VideoFlow AI.png"
-                    alt="logo:VideoFlow AI"
-                  />
+                  <img src="../assets/images/index/VideoFlow AI.png" alt="logo:VideoFlow AI" />
                 </div>
                 <div class="card-body">
                   <h4>VideoFlow AI</h4>
@@ -333,14 +306,11 @@
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card bg-trn-100 text-white p-3 p-lg-4">
+            </li>
+            <li class="col-9">
+              <div class="card h-100 bg-trn-100 text-white p-3 p-lg-4">
                 <div class="card-brand">
-                  <img
-                    src="../assets/images/index/InsightX Analyzer.png"
-                    alt="logo:InsightX Analyzer"
-                  />
+                  <img src="../assets/images/index/InsightX Analyzer.png" alt="logo:InsightX Analyzer" />
                 </div>
                 <div class="card-body">
                   <h4>InsightX Analyzer</h4>
@@ -350,14 +320,11 @@
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card bg-trn-100 text-white p-3 p-lg-4">
+            </li>
+            <li class="col-9">
+              <div class="card h-100 bg-trn-100 text-white p-3 p-lg-4">
                 <div class="card-brand">
-                  <img
-                    src="../assets/images/index/AutoTasker.png"
-                    alt="logo:AutoTasker"
-                  />
+                  <img src="../assets/images/index/AutoTasker.png" alt="logo:AutoTasker" />
                 </div>
                 <div class="card-body">
                   <h4>AutoTasker</h4>
@@ -367,8 +334,9 @@
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
+          <button type="button" class="btn btn-purple mx-auto mt-4">查看更多新工具</button>
         </div>
       </section>
       <section class="container-fluid bg-5 py-7 py-lg-8 text-center">
@@ -377,46 +345,38 @@
           <h3 class="body-md text-neu-200 mb-4">
             無論是小型的效率工具還是強大的生成式應用，歡迎和我們分享你的 AI 能量
           </h3>
-          <div class="row">
-            <div class="col-md-4">
+          <ul class="list-unstyled row row-cols-1 row-cols-lg-3 g-3 g-lg-4">
+            <li class="col">
               <div class="mb-1 mb-md-3">
-                <img
-                  src="../assets/images/index/index-income.png"
-                  alt="圖示：建立多元化的副業收入"
-                />
+                <img class="img-fluid" src="../assets/images/index/index-income.png" alt="圖示：建立多元化的副業收入" />
               </div>
               <h4 class="h5 mb-1">建立多元化的副業收入</h4>
               <p class="text-neu-200 body-md">
                 透過靈活的訂閱制與分潤機制，讓您的程式碼在睡覺時也能為您創造價值。我們提供完善的支付金流對接，讓獲利變得簡單透明。
               </p>
-            </div>
-            <div class="col-md-4">
+            </li>
+            <li class="col">
               <div class="mb-1 mb-md-3">
-                <img
-                  src="../assets/images/index/index-exposure.png"
-                  alt="圖示：獲得精準的流量支援"
-                />
+                <img class="img-fluid" src="../assets/images/index/index-exposure.png" alt="圖示：獲得精準的流量支援" />
               </div>
               <h4 class="h5 mb-1">獲得精準的流量支援</h4>
               <p class="text-neu-200 body-md">
                 無需再煩惱行銷推廣！我們的平台每日有數萬名 AI
                 愛好者尋求新工具，上架即刻獲得高曝光率，讓您的作品精準觸及目標受眾。
               </p>
-            </div>
-            <div class="col-md-4">
+            </li>
+            <li class="col">
               <div class="mb-1 mb-md-3">
-                <img
-                  src="../assets/images/index/index-Community.png"
-                  alt="圖示：加入開發者創作社群"
-                />
+                <img class="img-fluid" src="../assets/images/index/index-Community.png" alt="圖示：加入開發者創作社群" />
               </div>
               <h4 class="h5 mb-1">加入開發者創作社群</h4>
               <p class="text-neu-200 body-md">
                 獲取最真實的使用者回饋與數據分析，幫助您持續迭代產品。在這裡，您可以與全球頂尖的
                 AI 開發者交流，共同定義未來的 AI 應用生態。
               </p>
-            </div>
-          </div>
+            </li>
+          </ul>
+          <button type="button" class="btn btn-purple mx-auto mt-4">立即上架</button>
         </div>
       </section>
       <section class="container-fluid bg-6 py-7 py-lg-8">
@@ -425,14 +385,8 @@
           <ul class="accordion" id="FAQ">
             <li class="accordion-item">
               <h3 class="accordion-header">
-                <button
-                  type="button"
-                  class="accordion-button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#faq-1"
-                  aria-expanded="true"
-                  aria-controls="panelsStayOpen-collapseOne"
-                >
+                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq-1"
+                  aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                   AI ToolVerse 是什麼？
                 </button>
               </h3>
@@ -445,14 +399,8 @@
             </li>
             <li class="accordion-item">
               <h3 class="accordion-header">
-                <button
-                  type="button"
-                  class="accordion-button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#faq-2"
-                  aria-expanded="true"
-                  aria-controls="panelsStayOpen-collapseOne"
-                >
+                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq-2"
+                  aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                   這裡的 AI 工具都是免費的嗎？
                 </button>
               </h3>
@@ -463,14 +411,8 @@
             </li>
             <li class="accordion-item">
               <h3 class="accordion-header">
-                <button
-                  type="button"
-                  class="accordion-button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#faq-3"
-                  aria-expanded="true"
-                  aria-controls="panelsStayOpen-collapseOne"
-                >
+                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq-3"
+                  aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                   訂閱 AI 工具後，我可以做什麼？
                 </button>
               </h3>
@@ -482,14 +424,8 @@
             </li>
             <li class="accordion-item">
               <h3 class="accordion-header">
-                <button
-                  type="button"
-                  class="accordion-button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#faq-4"
-                  aria-expanded="true"
-                  aria-controls="panelsStayOpen-collapseOne"
-                >
+                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq-4"
+                  aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                   我可以同時訂閱多個 AI 工具嗎？
                 </button>
               </h3>
@@ -501,14 +437,8 @@
             </li>
             <li class="accordion-item">
               <h3 class="accordion-header">
-                <button
-                  type="button"
-                  class="accordion-button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#faq-5"
-                  aria-expanded="true"
-                  aria-controls="panelsStayOpen-collapseOne"
-                >
+                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq-5"
+                  aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                   如果我不想繼續使用某個工具，可以取消訂閱嗎？
                 </button>
               </h3>
@@ -519,14 +449,8 @@
             </li>
             <li class="accordion-item">
               <h3 class="accordion-header">
-                <button
-                  type="button"
-                  class="accordion-button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#faq-6"
-                  aria-expanded="true"
-                  aria-controls="panelsStayOpen-collapseOne"
-                >
+                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq-6"
+                  aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                   誰可以在這裡上架 AI 工具？
                 </button>
               </h3>
@@ -540,6 +464,7 @@
       </section>
     </main>
     <%- include('./layout/footer'); -%>
-    <script type="module" src="../main.js"></script>
-  </body>
+      <script type="module" src="../main.js"></script>
+</body>
+
 </html>
