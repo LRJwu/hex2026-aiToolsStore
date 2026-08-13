@@ -1,0 +1,32 @@
+.bg-1 {
+  background: url(/assets/images/index/index-bg/index-hero-bg.png) no-repeat
+    center/cover;
+}
+.bg-2{
+    background:
+    url(/assets/images/index/index-bg/index-tool-bg-dec.png)
+    no-repeat top right/calc(760/1920*100%),
+    url(/assets/images/index/index-bg/index-tool-bg.png)
+    no-repeat center/cover;
+}
+.bg-3{
+    background:
+    linear-gradient(#100C24,#110D2580), 
+    url(/assets/images/index/index-bg/landing-highlight-bg.png)
+    no-repeat center/cover;
+}
+.bg-4{
+    background:
+    linear-gradient(#25245733,#110920), 
+    url(/assets/images/index/index-bg/index-new-bg-dec-left.png)
+    no-repeat top left/calc(800/1920*100%)
+    ,url(/assets/images/index/index-bg/index-new-bg-dec-right.png)
+    no-repeat bottom right/calc(800/1920*100%)
+    ,url(/assets/images/index/index-bg/index-new-bg.png)
+    no-repeat bottom/100%;
+}
+.bg-5{
+    background:
+    url(/assets/images/index/index-bg/index-bg-5.png) no-repeat bottom/cover,
+    linear-gradient(#7B5CA800,#9C84C0);
+}

@@ -45,5 +45,5 @@
 // 9. 單一頁面樣式
 // 放特定頁面才會使用的樣式，例如首頁、關於我們
 // 放在最後，必要時可以覆蓋前面的共用樣式
-// @import "./pages/index";
+@import "./pages/index";
 @import "./pages/account";
