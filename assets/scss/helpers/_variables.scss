@@ -1404,9 +1404,9 @@ $card-group-margin:                 $grid-gutter-width * .5 !default;
 
 // scss-docs-start accordion-variables
 $accordion-padding-y:                     1rem !default;
-$accordion-padding-x:                     1.25rem !default;
+$accordion-padding-x:                     1rem;//有修改，原本：1.25rem !default;
 $accordion-color:                         var(--#{$prefix}body-color) !default;
-$accordion-bg:                            var(--#{$prefix}body-bg) !default;
+$accordion-bg:                            $transparent-100;//有修改，原本：var(--#{$prefix}body-bg) !default;
 $accordion-border-width:                  var(--#{$prefix}border-width) !default;
 $accordion-border-color:                  var(--#{$prefix}border-color) !default;
 $accordion-border-radius:                 var(--#{$prefix}border-radius) !default;
@@ -1418,7 +1418,7 @@ $accordion-body-padding-x:                $accordion-padding-x !default;
 $accordion-button-padding-y:              $accordion-padding-y !default;
 $accordion-button-padding-x:              $accordion-padding-x !default;
 $accordion-button-color:                  var(--#{$prefix}body-color) !default;
-$accordion-button-bg:                     var(--#{$prefix}accordion-bg) !default;
+$accordion-button-bg:                     $transparent-200;//有修改，原本：var(--#{$prefix}accordion-bg) !default;
 $accordion-transition:                    $btn-transition, border-radius .15s ease !default;
 $accordion-button-active-bg:              var(--#{$prefix}primary-bg-subtle) !default;
 $accordion-button-active-color:           var(--#{$prefix}primary-text-emphasis) !default;

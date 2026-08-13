@@ -30,3 +30,18 @@
     url(/assets/images/index/index-bg/index-bg-5.png) no-repeat bottom/cover,
     linear-gradient(#7B5CA800,#9C84C0);
 }
+.accordion.bg-trn{
+    --#{$prefix}accordion-color: #{$white};
+    --#{$prefix}accordion-bg: #{$transparent-100};
+    --#{$prefix}accordion-border-color: #{$transparent-200};
+    --#{$prefix}accordion-border-radius: #{$accordion-border-radius};
+    --#{$prefix}accordion-inner-border-radius: #{$accordion-inner-border-radius};
+    --#{$prefix}accordion-btn-color: #{$white};
+    --#{$prefix}accordion-btn-bg: #{$transparent-100};
+    --#{$prefix}accordion-btn-focus-box-shadow: #{$accordion-button-focus-box-shadow};
+    --#{$prefix}accordion-active-color: #{$white};
+    --#{$prefix}accordion-active-bg: #{$transparent-200};
+    & .accordion-button::after{
+        filter: brightness(0) invert(1);
+    }
+}
