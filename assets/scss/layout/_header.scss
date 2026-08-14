@@ -11,3 +11,8 @@ header,footer {
     }
   }
 }
+//父層如果沒有深色，就不套用透明度
+*:not(.bg-neu)>.sticky-top.bg-neu[class*="opacity"]
+{
+  --bs-bg-opacity: 1;
+}
