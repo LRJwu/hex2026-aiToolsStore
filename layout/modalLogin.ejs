@@ -1,0 +1,53 @@
+<!-- 登入視窗 -->
+<div id="LoginModal" class="modal bg-neu bg-opacity-200 backdrop-blur" tabindex="-1">
+    <%- include('./header'); -%>            
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-neu bg-opacity-100 text-white text-center">
+            <div class="modal-body py-5 py-lg-120">
+                <div class="position-relative d-grid gap-5">
+                    <div>
+                        <h1 class="h3 h2-lg mb-4">
+                            歡迎回來
+                        </h1>
+                        <h2 class="fs-bmd fs-lg-blg text-neu-200 mb-1">
+                            登入以繼續使用 AI ToolVerse
+                        </h2>
+                    </div>
+                    <from class="d-grid gap-3 mx-auto w-100">
+                        <button type="button" class="btn btn-outline-purple text-purple-100"><i class="bi"><img
+                                    src="/assets/images/index/login-google.png" class="img-fulid"></i>使用 Google 繼續</button>
+                        <button type="button" class="btn btn-outline-purple text-purple-100"><i class="bi"><img
+                                    src="/assets/images/index/login-facebook.png" class="img-fulid"></i>使用 Facebook 繼續</button>
+                        <button type="button" class="btn btn-outline-purple text-purple-100"><i class="bi"><img
+                                    src="/assets/images/index/login-apple.png" class="img-fulid"></i>使用 Apple 繼續</button>
+                    </from>
+                    <h3 class="divider fs-bsm text-neu-200 d-flex justify-content-center align-items">或使用 AI ToolVerse 帳號登入</h3>
+                    <from class="d-grid gap-3 mx-auto w-100 text-start">
+                        <div class="mb-3">
+                            <label class="form-label" for="inputEmail">電子信箱</label>
+                            <input class="form-control text-black" id="inputEmail" name="inputEmail" type="email"
+                                placeholder="請輸入電子信箱">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputPassword" class="form-label">密碼</label>
+                            <div class="input-group mb-3">
+                                <input id="inputPassword" name="inputPassword" class="form-control text-black border-end-0"
+                                    placeholder="請輸入密碼" type="password">
+                                <span class="input-group-text"><i class="bi bi-eye-slash"></i></span>
+                            </div>
+                            <div id="passwordHelpBlock" class="d-flex justify-content-between mt-2">
+                                <div>
+                                    <input class="" id="remberpassword" type="checkbox" name="remberpassword">
+                                    <label class="text-neu-200" for="remberpassword">記住帳號</label>
+                                </div>
+                                <a href="#" class="text-purple-200 text-decoration-none"> 忘記密碼？ </a>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-purple">登入</button>
+                    </from>
+                    <p class="fs-bsm">還沒有帳號？<a href="#" class="text-purple text-decoration-underline">立即註冊</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

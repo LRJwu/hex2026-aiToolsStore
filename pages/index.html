@@ -417,9 +417,11 @@
               </div>
             </li>
           </ul>
-          <button type="button" class="btn btn-purple mx-auto mt-4">
-            查看更多新工具
-          </button>
+          <div class="d-flex">
+            <a  href="tools.html" class="btn btn-purple mx-auto mt-4" target="_blank">
+              查看更多新工具
+            </a>
+          </div>
         </div>
       </section>
       <section class="container-fluid bg-5 py-7 py-lg-8 text-center">
@@ -609,6 +611,7 @@
       </section>
     </main>
     <%- include('./layout/footer'); -%>
+    <%- include('./layout/modalLogin'); -%>
     <script type="module" src="../main.js"></script>
   </body>
 </html>

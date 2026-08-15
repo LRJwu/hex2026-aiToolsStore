@@ -1,5 +1,5 @@
 .btn {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   gap: map-get($spacers, 2);
@@ -79,4 +79,8 @@
     text-decoration: underline;
     text-underline-offset: .5em;
   }
+}
+.btn-outline-purple {
+    --bs-btn-color: #{$purple-100};
+    --bs-btn-border-color: #{$purple-100};
 }
