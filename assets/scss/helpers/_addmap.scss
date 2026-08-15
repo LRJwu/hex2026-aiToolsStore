@@ -1,0 +1,21 @@
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+@import "../../node_modules/bootstrap/scss/maps";
+$theme-colors-text: map-merge(
+  $theme-colors-text,
+  (
+    "neu": $neu-text-emphasis,
+  )
+);
+$theme-colors-bg-subtle: map-merge(
+  $theme-colors-bg-subtle,
+  (
+    "neu": $neu-bg-subtle,
+  )
+);
+$theme-colors-border-subtle: map-merge(
+  $theme-colors-border-subtle,
+  (
+    "neu": $neu-border-subtle,
+  )
+);
