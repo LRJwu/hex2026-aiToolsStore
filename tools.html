@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <title>探索 AI 工具</title>
+    <script type="module" crossorigin src="/hex2026-aiToolsStore/assets/main-BhYPZBjA.js"></script>
+    <link rel="stylesheet" crossorigin href="/hex2026-aiToolsStore/assets/main-ZSFi3IuP.css">
+  </head>
+
+  <body class="bg-neu">
+    <header class="sticky-top bg-neu bg-opacity-100 backdrop-blur text-white">
+    <div class="container">
+        <nav class="navbar justify-content-start">
+            <a class="navbar-brand" href="#">
+                <img src="/hex2026-aiToolsStore/assets/logo-BVlqBbcd.png" alt="Logo" class="d-inline-block align-text-top" />
+            </a>
+            <div class="d-none d-lg-flex align-items-center gap-3 flex-grow-1">
+                <div class="dropdown">
+                    <a class="btn text-white dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">探索 AI 工具 <i class="bi bi-chevron-down"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-dark backdrop-blur">
+                        <li><a href="../pages/tools.html" class="dropdown-item">內容生成</a></li>
+                        <li><a href="../pages/tools.html" class="dropdown-item">視覺設計</a></li>
+                        <li><a href="../pages/tools.html" class="dropdown-item">影像製作</a></li>
+                        <li><a href="../pages/tools.html" class="dropdown-item">程式開發</a></li>
+                        <li><a href="../pages/tools.html" class="dropdown-item">教育與學習</a></li>
+                        <li><a href="../pages/tools.html" class="dropdown-item">資料分析</a></li>
+                        <li><a href="../pages/tools.html" class="dropdown-item">生產力工具</a></li>
+                        <li><a href="../pages/tools.html" class="dropdown-item">音樂創作</a></li>
+                    </ul>
+                </div>
+                <from>
+                    <div class="input-group search">
+                        <span class="input-group-text"><i class="bi bi-search"></i></span>
+                        <!-- <div class="form-floating"> -->
+                        <input id="keyword" name="keyword" type="text" class="form-control border-start-0 ps-0"
+                            placeholder="輸入工具名稱、功能或關鍵字" />
+                        <!-- <label for="keyword">輸入工具名稱、功能或關鍵字</label> -->
+                        <!-- </div> -->
+                    </div>
+                </from>
+                <button type="button" class="btn text-white ms-auto" data-bs-toggle="modal" data-bs-target="#LoginModal">
+                    登入/註冊
+                </button>
+            </div>
+            <div class="ms-auto d-flex gap-2 d-lg-none">
+                <a class="btn btn-dark-icon" href="#collapseSearch" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSearch"><i class="bi bi-search"></i></a>
+                <a class="btn btn-dark-icon" href="#offcanvasNavbar" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"><i class="bi bi-list"></i></a>
+            </div>
+        </nav>
+    </div>
+    <div id="collapseSearch" class="collapse bg-trn w-100 border-y">
+        <form class="d-flex justify-content-center align-items-center w-100 p-2h px-3 gap-1" role="search">
+            <div class="input-group search">
+                <input type="text" class="form-control" placeholder="輸入工具名稱、功能或關鍵字" />
+                <button class="btn btn-outline-secondary" type="button">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+            <a class="btn btn-dark-icon" href="#collapseSearch" data-bs-toggle="collapse"
+                data-bs-target="#collapseSearch">
+                <i class="bi bi-x-lg"></i></a>
+        </form>
+    </div>
+</header>
+<div id="offcanvasNavbar" class="offcanvas offcanvas-end bg-trn backdrop-blur text-white g-3">
+    <div class="offcanvas-header pb-0">
+        <a class="btn btn-dark-icon ms-auto" href="#offcanvasNavbar" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <i class="bi bi-x-lg"></i></a>
+    </div>
+    <div class="offcanvas-body pt-0">
+        <ul class="nav nav-dark flex-column gap-2">
+            <li class="nav-items p-2h border-bottom">
+                <h3 class="h6 mb-0">探索 AI 工具</h3>
+            </li>
+            <li class="nav-items">
+                <a href="../pages/tools.html" class="nav-link active">內容生成</a>
+            </li>
+            <li class="nav-items">
+                <a href="../pages/tools.html" class="nav-link disable">視覺設計</a>
+            </li>
+            <li class="nav-items">
+                <a href="../pages/tools.html" class="nav-link">影像製作</a>
+            </li>
+            <li class="nav-items">
+                <a href="../pages/tools.html" class="nav-link">程式開發</a>
+            </li>
+            <li class="nav-items">
+                <a href="../pages/tools.html" class="nav-link">教育與學習</a>
+            </li>
+            <li class="nav-items">
+                <a href="../pages/tools.html" class="nav-link">資料分析</a>
+            </li>
+            <li class="nav-items">
+                <a href="../pages/tools.html" class="nav-link">生產力工具</a>
+            </li>
+            <li class="nav-items">
+                <a href="../pages/tools.html" class="nav-link">音樂創作</a>
+            </li>
+        </ul>
+    </div>
+    <form class="p-5 pt-3">
+        <button type="button" class="btn  btn-purple bg-purple-100 w-100 d-none"  data-bs-toggle="modal" data-bs-target="#LoginModal">
+            登入/註冊
+        </button>
+        <button type="button" class="btn btn-purple bg-purple-100 w-100"  data-bs-toggle="modal" data-bs-target="#LoginModal">
+            <i class="bi bi-person"></i>會員中心
+        </button>
+    </form>
+</div>    <main class="bg-neu text-white">
+      <!-- hero banner刊頭 -->
+      <section
+        class="container-fluid bg-6 d-flex justify-content-center align-items-center py-8"
+      >
+        <div class="container px-0">
+          <h1 class="h2 display-lg-1 mb-4">探索 AI 工具</h1>
+          <p class="fs-bmd fs-lg-blg text-neu-200 mb-1">
+            發現 5,000+ 個能改變你生活方式的智慧應用
+          </p>
+        </div>
+      </section>
+      <!--ＥＮＤ hero banner刊頭 -->
+      <section class="bg-7 py-5 py-lg-6">
+        <div class="container d-grid gap-4 gap-lg-5">
+          <div class="d-flex justify-content-between align-items-end">
+            <h2 class="h3-lg">
+              所有工具<span class="fs-bsm text-neu-200 ms-2">共 5,316 項結果</span>
+            </h2>
+            <p class="d-flex gap-2h">
+              <a href="#" class="link-purple fs-b d-lg-flex d-none">最新上架</a
+              ><span class="d-lg-flex d-none">|</span>
+              <a href="#" class="link-purple fs-b d-lg-flex d-none">最熱門</a>
+              <a href="#" class="link-purple fs-b d-flex d-lg-none">
+                <i class="bi bi-sort-down me-2"></i>排序
+              </a>
+            </p>
+          </div>
+          <div class="row">
+            <nav class="d-none d-lg-flex col-lg-3">
+              <div class="list-group list-group-flush">
+                <a
+                  class="list-group-item list-group-item-action list-group-item-neu"
+                >
+                  內容生成
+                </a>
+                <a
+                  class="list-group-item list-group-item-action list-group-item-neu"
+                >
+                  視覺設計
+                </a>
+                <a
+                  class="list-group-item list-group-item-action list-group-item-neu"
+                >
+                  影像製作
+                </a>
+                <a
+                  class="list-group-item list-group-item-action list-group-item-neu"
+                >
+                  程式開發
+                </a>
+                <a
+                  class="list-group-item list-group-item-action list-group-item-neu"
+                >
+                  教育與學習
+                </a>
+                <a
+                  class="list-group-item list-group-item-action list-group-item-neu"
+                >
+                  資料分析
+                </a>
+                <a
+                  class="list-group-item list-group-item-action list-group-item-neu"
+                >
+                  生產力工具
+                </a>
+                <a
+                  class="list-group-item list-group-item-action list-group-item-neu"
+                >
+                  音樂創作
+                </a>
+              </div>
+            </nav>
+            <section class="col-lg-9">
+              <ul class="list-unstyled row row-cols-1 row-cols-lg-3 g-3 g-lg-4">
+                <li class="col">
+                  <div class="card h-100 bg-trn-100 text-white">
+                    <div class="card-body p-3 p-lg-4 gap-3">
+                      <div class="card-brand mb-3">
+                        <img
+                          src="data:image/png;base64,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"
+                          alt="logo:WriteCraft AI"
+                        />
+                      </div>
+                      <h4 class="h5 h4-lg mb-1">WriteCraft AI</h4>
+                      <h5 class="body-md text-neu-200 mb-2">內容生成</h5>
+                      <p class="body-md line-truncate">
+                        快速產出文案，從社群貼文、部落格文章到產品介紹，依不同目的生成合適內容。
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="col">
+                  <div class="card h-100 bg-trn-100 text-white">
+                    <div class="card-body p-3 p-lg-4 gap-3">
+                      <div class="card-brand mb-3">
+                        <img
+                          src="data:image/png;base64,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"
+                          alt="logo:PixelMind Studio"
+                        />
+                      </div>
+                      <h4 class="h5 h4-lg mb-1">PixelMind Studio</h4>
+                      <h5 class="body-md text-neu-200 mb-2">影像製作</h5>
+                      <p class="body-md line-truncate">
+                        只需輸入簡單描述，就能生成插畫、社群圖片與設計素材，適合缺乏設計資源的團隊或個人。
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="col">
+                  <div class="card h-100 bg-trn-100 text-white">
+                    <div class="card-body p-3 p-lg-4 gap-3">
+                      <div class="card-brand mb-3">
+                        <img
+                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAABBlJREFUeAHtm01vE0cYx/+zqRMTqcS0vbbyN6hzqUrpwT725eB8gLTmG6SHor6JLoQD4jVIIHEiiSBCnJIDbxISiYR4OeYbsFdeDgESXuzsPsyzTgJJNt7xzHhjvPu72JrVjGZ+Hu8888wukJGRkWGJN2/cIj4xxPqXX3+kMvkoBZ/Bu3VPzKEN3r38r0oQk/JrIWxUCHfg86NH2mmDZt0CXr+tBkFQdOAsiNHjC0iAUMDPPxB3vvZRudffj8rcgvDiGuBfXTT8xxENTw3sHT8IBejqX0Xy/XkQih/qC1eMnmhLog6OHHwNmwfPFOt1zFfLVIxrgOrBWGS5bPPdq8P/QwE5+NmPB9+sTy5dPqRU3wSHCOUdrilJEGvTPgoicuMk0ORYQY62FHktAQlOzHXlmbAT8RLyhZb1OywhTgCzLqEATVRmQsv6HZSgIoAp1hu9KUFVAPeg1IsS1AU0e9AdEq4c+h2WaE9Aswe7L4FoypaE9gWEPUCp0cBZGMAS6suHtQdhS4KegLADqP1yIIwgtQkCmlotO7sqQVtAswOoXThTNeqA/2Wf63/TB12khAma+bMETYwEMHfvDOP86RGY4A/nYCChQAHmdSUYC2BYwqWLP8EElkBfaXdHW4IVAcz1uf24dqUCExrf9YOGkpVgTQDDAowk5KSEAxYkyO21agWrApiukCBzC6oSrAtgrEkYFNBC5hZUJXREAGNDwmoCEjomgDGVwIPvtISOCmBYwPXZ/dAllCCXSP0G1iRw0jWCjgtgrs1U8PSJ9t4pjA+Cr/WjxVDC8uvIsD0RASvL+TBOMMEkXG5CVZr5Z1uMkIgAZl5GiyYYLIsbBLRa3lqWmACeBSsreWiTg/7NcAP6dmtJYgIYltBtOEJgCSmGZ8AiUowjzwDn5D8rtbPAkQegS/J8q+OHkN1KeBO8cV9MyI9zSCEbq8DNB2JMEKaRMjYtgzceilraJGyLA9ImITIQCiUILCAF7BgJ5nIYkRJ6PkbYUQAvj1JCpdcltNwLpEFC7Gao1yUo7QZZgu+Dz788GPDs+RcuTBiEC8sob4dvPxJeEIAznB40+ffv2jQBSs8ORlH/fnBaLtHa9aNoKx9gQ8KeveNTJhLEbydlfbK2d2k7IdINEvpGT7m2JGhlhGxJkNnaP6CJLQnaKTEbEvJD4xNE+oOwIcEoJ2hlJgwdc3dTgnFS9FOXYCUrzBLkx4hJak1FQr5F+7oSrKXFZUJlUd7ZK60k3I55/6ClBBKLYp/bUnCsBMKLrUVWzwViJCil3CIlkPAocJSexFqTEJnPcFb7JraVwTLrErD5nnBOZp9dxSaaEgRViMQRjhcGAmd4zz7XU60vJdS2zIQlATEiDh73kCT8noHJI7U2oMmxIjIyMjIyMiJ5DzzrTf95g54/AAAAAElFTkSuQmCC"
+                          alt="logo:CodePilot Pro"
+                        />
+                      </div>
+                      <h4 class="h5 h4-lg mb-1">CodePilot Pro</h4>
+                      <h5 class="body-md text-neu-200 mb-2">程式開發</h5>
+                      <p class="body-md line-truncate">
+                        專為工程師設計的 AI
+                        助手，協助產生程式碼、解釋複雜邏輯，讓你專注在更高價值的開發工作。
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="col">
+                  <div class="card h-100 bg-trn-100 text-white">
+                    <div class="card-body p-3 p-lg-4 gap-3">
+                      <div class="card-brand mb-3">
+                        <img
+                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAABSJJREFUeAHtWs2OHDUQrvLMvsfuI3DIgVOCkFiBhARCkAsXnmSGvMgS5QQRAg4ICcQBLlyQeIQsrwGZrtj1Y3sm2el29fQkUvxpd9ztsd22u36+Kg9AR0dHR0dHR0dHR8fbCISFsXv6HQHGxwSUp4WQ7pEw33OJK66HWI/cXvrQ+sF1gAWx6OAJsh4kvQNdtq4x1RPXc6Fl2gdI/3E7YGEsvgFEaWWyfrTlxIWTLB3tL13HSt6hgWzhtnHLYXkJ2L+luLi0KbwX+Tt66eJsmC1iu5vH25D0mP/jAuOY8V7K9TqWQ7yXEtZRz2XPkW1BAIztQPtzH+DL6jqOkTrwfeo/SD1on4t797+GGVjDTATEDc+QRGWRFVh0n+IyVl88nLXJz//8dQCxIxjFB7KBZPCTZ23AyVQAcX+drPmnkGiywuwIVsPOtxGzN4ByKd4N9J91PJzAiCHwilEXS2Ygk4DRfC/RrAJ0c3O5XxNuucBgDg2yAxtOIAJEt7y5sGInyjaD3Ubcl1hF//x1WTfHd969hQa024Dn8EwIC7Auhq++XNRXr+9fXx37/r+//yhESykGNMCnAkLY6FDvXwd0HmwiPCrXLgFq5BOTKQxvOnY/fv9MXFhNhYUOp3L1wUdXTQMyoYryGBA8NqF9AwZ+GGFoF7eEON9LsxPKCJkHinUf2kWq8oieF9KuAmqDvRaY1SaxQXFsKPEPiKF3oJ4HOZikwwYUP+x5oAxRBUhUNhMxuAas3vwZVIDM9u2x+Tuxe/rtlvU8gekvbpnOJingVx+rVon6Rr827GD3+y+b1FSocICL9663x8ZHEClIBpDOsgFCdJSSTuqwUQvNrnP18adHe/3/28/RvgSQBbFkbEfGJ/1wqZDPDSaRJZpkB0w8y8fIhFi8SLuOGzW3GtrzwAWcTPMtxpduUxakTSfy/Drhgo542hsL8NuZMkmx+nozxXOQEOoYSU4yMlRLooOYeTYA84OnpazojuujfWhqc8rrdgVHTgloYIFlUjlWOgrOJ+SU2GjzSu7RYw7aN4DM6GqKc6y5NCyfE54gcdZ0VqeqSB4/4GCCWL3J8Tmi5gaU6413YNXK16PNKxrocoPt+QAmQhp44BSbNjxKQQ7n+eIkdz/9sJE8YckDhpjrGwYpY9023jCxGaYYQXlIbC/nCq1o3gDck4BxrD5/uK3v4wYMQePW9BESQUo7EzckvfD1+x82rcISRvxCzmIDNJSzGLwdJuLCDO0anOG1T/ALHEawojWOCbPBkhgYNKkkg0YR9rixEkiBC+60uCZEoBXRJvwbJAGSOaKw3zSeSyDJztLQIQ/ODeA01FQitIfVJ59dwQmhPIhEtc7DBPeyMK8btRp6tMCxAWRJjNkG6CTQs0aZ1vmCoTdi7Qlkxtg5IY8XEEbncVkLgHmAnjbDmTJCxfWE8AZsAuWYxOOWPV5gy26c3Xn8f/xkA3Z0naBH5XJMDnwcPoicWRtkwauOuEUOS90QqXA+Fg/luF2+tyN37UvwaEjrHjiF6OAlM0HfPCFKEyu/69Ey5OOzg98IlbokTUEkiVOtypCtTT2utAHm/AMnkGXMi3sPZq1h/vG4pvAQ9Ijq4Ks7LhjGpbNK8UfxsTwmSMrL2uRgTJrMxvzjcXOHL3ODEsza8fZBuML5vKozlRYW2VkkjfnoPTc8DQ05wQ8klIcdZIn33qrUIFokZTU2ApafQZgA5B9XCcuVLJEdf4XpSdmOjo6Ojo6Ojo6Ojo5X4QWSCDc7z2TjgQAAAABJRU5ErkJggg=="
+                          alt="logo:VideoFlow AI"
+                        />
+                      </div>
+                      <h4 class="h5 h4-lg mb-1">VideoFlow AI</h4>
+                      <h5 class="body-md text-neu-200 mb-2">影像製作</h5>
+                      <p class="body-md line-truncate">
+                        將文章或腳本轉換為影片，自動搭配畫面、字幕與音樂，適合快節奏的創作者或行銷團隊。
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="col">
+                  <div class="card h-100 bg-trn-100 text-white">
+                    <div class="card-body p-3 p-lg-4 gap-3">
+                      <div class="card-brand mb-3">
+                        <img
+                          src="data:image/png;base64,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"
+                          alt="logo:InsightX Analyzer"
+                        />
+                      </div>
+                      <h4 class="h5 h4-lg mb-1">InsightX Analyzer</h4>
+                      <h5 class="body-md text-neu-200 mb-2">資料分析</h5>
+                      <p class="body-md line-truncate">
+                        快速整理資料、產出圖表與分析摘要，幫助你從複雜數據中找出關鍵洞察。
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="col">
+                  <div class="card h-100 bg-trn-100 text-white">
+                    <div class="card-body p-3 p-lg-4 gap-3">
+                      <div class="card-brand mb-3">
+                        <img
+                          src="data:image/png;base64,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"
+                          alt="logo:AutoTasker"
+                        />
+                      </div>
+                      <h4 class="h5 h4-lg mb-1">AutoTasker</h4>
+                      <h5 class="body-md text-neu-200 mb-2">生產力工具</h5>
+                      <p class="body-md line-truncate">
+                        串接多種工具來自動執行日常任務，減少人工操作錯誤，讓你把時間用在更重要的事情上。
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item disabled">
+                    <a class="page-link"><i class="bi bi-arrow-left-short"></i></a>
+                  </li>
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#"><i class="bi bi-arrow-right-short"></i></a>
+                  </li>
+                </ul>
+              </nav>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="footer bg-neu text-neu-200 py-5 py-lg-7 g-4">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-md-6 mb-5">
+        <a href="#" class="navbar-brand">
+          <img
+            src="/hex2026-aiToolsStore/assets/logo-BVlqBbcd.png"
+            alt="Logo"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+      </div>
+      <div class="col-md-6">
+        <from>
+          <label for="subEmail" class="form-label"
+            >訂閱我們，掌握最新 AI 工具與趨勢</label
+          >
+          <div class="input-group">
+            <input
+              id="subEmail"
+              type="email"
+              class="form-control"
+              placeholder="helloworld@gmail.com"
+              disabled
+            />
+            <button class="btn btn-purple text-neu-600" type="button">訂閱</button>
+          </div>
+        </from>
+      </div>
+    </div>
+    <section class="copyright body-sm">
+      <p>Copyright ©2026 AI ToolVerse</p>
+      <p>
+          Tool logos by BRIX Templates, modified
+          from original, licensed under CC BY 4.0
+      </p>
+    </section>
+  </div>
+</footer>
+    <!-- 登入視窗 -->
+<div id="LoginModal" class="modal bg-neu bg-opacity-200 backdrop-blur" tabindex="-1">
+    <header class="sticky-top bg-neu bg-opacity-100 backdrop-blur text-white">
+    <div class="container">
+        <nav class="navbar justify-content-start">
+            <a class="navbar-brand" href="#">
+                <img src="/hex2026-aiToolsStore/assets/logo-BVlqBbcd.png" alt="Logo" class="d-inline-block align-text-top" />
+            </a>
+            <div class="d-none d-lg-flex align-items-center gap-3 flex-grow-1">
+                <div class="dropdown">
+                    <a class="btn text-white dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">探索 AI 工具 <i class="bi bi-chevron-down"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-dark backdrop-blur">
+                        <li><a href="../pages/tools.html" class="dropdown-item">內容生成</a></li>
+                        <li><a href="../pages/tools.html" class="dropdown-item">視覺設計</a></li>
+                        <li><a href="../pages/tools.html" class="dropdown-item">影像製作</a></li>
+                        <li><a href="../pages/tools.html" class="dropdown-item">程式開發</a></li>
+                        <li><a href="../pages/tools.html" class="dropdown-item">教育與學習</a></li>
+                        <li><a href="../pages/tools.html" class="dropdown-item">資料分析</a></li>
+                        <li><a href="../pages/tools.html" class="dropdown-item">生產力工具</a></li>
+                        <li><a href="../pages/tools.html" class="dropdown-item">音樂創作</a></li>
+                    </ul>
+                </div>
+                <from>
+                    <div class="input-group search">
+                        <span class="input-group-text"><i class="bi bi-search"></i></span>
+                        <!-- <div class="form-floating"> -->
+                        <input id="keyword" name="keyword" type="text" class="form-control border-start-0 ps-0"
+                            placeholder="輸入工具名稱、功能或關鍵字" />
+                        <!-- <label for="keyword">輸入工具名稱、功能或關鍵字</label> -->
+                        <!-- </div> -->
+                    </div>
+                </from>
+                <button type="button" class="btn text-white ms-auto" data-bs-toggle="modal" data-bs-target="#LoginModal">
+                    登入/註冊
+                </button>
+            </div>
+            <div class="ms-auto d-flex gap-2 d-lg-none">
+                <a class="btn btn-dark-icon" href="#collapseSearch" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSearch"><i class="bi bi-search"></i></a>
+                <a class="btn btn-dark-icon" href="#offcanvasNavbar" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"><i class="bi bi-list"></i></a>
+            </div>
+        </nav>
+    </div>
+    <div id="collapseSearch" class="collapse bg-trn w-100 border-y">
+        <form class="d-flex justify-content-center align-items-center w-100 p-2h px-3 gap-1" role="search">
+            <div class="input-group search">
+                <input type="text" class="form-control" placeholder="輸入工具名稱、功能或關鍵字" />
+                <button class="btn btn-outline-secondary" type="button">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+            <a class="btn btn-dark-icon" href="#collapseSearch" data-bs-toggle="collapse"
+                data-bs-target="#collapseSearch">
+                <i class="bi bi-x-lg"></i></a>
+        </form>
+    </div>
+</header>
+<div id="offcanvasNavbar" class="offcanvas offcanvas-end bg-trn backdrop-blur text-white g-3">
+    <div class="offcanvas-header pb-0">
+        <a class="btn btn-dark-icon ms-auto" href="#offcanvasNavbar" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <i class="bi bi-x-lg"></i></a>
+    </div>
+    <div class="offcanvas-body pt-0">
+        <ul class="nav nav-dark flex-column gap-2">
+            <li class="nav-items p-2h border-bottom">
+                <h3 class="h6 mb-0">探索 AI 工具</h3>
+            </li>
+            <li class="nav-items">
+                <a href="../pages/tools.html" class="nav-link active">內容生成</a>
+            </li>
+            <li class="nav-items">
+                <a href="../pages/tools.html" class="nav-link disable">視覺設計</a>
+            </li>
+            <li class="nav-items">
+                <a href="../pages/tools.html" class="nav-link">影像製作</a>
+            </li>
+            <li class="nav-items">
+                <a href="../pages/tools.html" class="nav-link">程式開發</a>
+            </li>
+            <li class="nav-items">
+                <a href="../pages/tools.html" class="nav-link">教育與學習</a>
+            </li>
+            <li class="nav-items">
+                <a href="../pages/tools.html" class="nav-link">資料分析</a>
+            </li>
+            <li class="nav-items">
+                <a href="../pages/tools.html" class="nav-link">生產力工具</a>
+            </li>
+            <li class="nav-items">
+                <a href="../pages/tools.html" class="nav-link">音樂創作</a>
+            </li>
+        </ul>
+    </div>
+    <form class="p-5 pt-3">
+        <button type="button" class="btn  btn-purple bg-purple-100 w-100 d-none"  data-bs-toggle="modal" data-bs-target="#LoginModal">
+            登入/註冊
+        </button>
+        <button type="button" class="btn btn-purple bg-purple-100 w-100"  data-bs-toggle="modal" data-bs-target="#LoginModal">
+            <i class="bi bi-person"></i>會員中心
+        </button>
+    </form>
+</div>            
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-neu bg-opacity-100 text-white text-center">
+            <div class="modal-body py-5 py-lg-120">
+                <div class="position-relative d-grid gap-5">
+                    <div>
+                        <h1 class="h3 h2-lg mb-4">
+                            歡迎回來
+                        </h1>
+                        <h2 class="fs-bmd fs-lg-blg text-neu-200 mb-1">
+                            登入以繼續使用 AI ToolVerse
+                        </h2>
+                    </div>
+                    <from class="d-grid gap-3 mx-auto w-100">
+                        <button type="button" class="btn btn-outline-purple text-purple-100"><i class="bi"><img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAABCcAAAQnAEmzTo0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAidJREFUeAHdVT1vE0EQfXtOhIsU7sBAcS5BIjhpEAXEVyKBcv4BSI74ATFNoEtSIGEasEQHko9f4ENIiM42IEEFIQ1lVgrokBsi4aTAspd3hx3fp4ONKMiT1jua2Xlvbm5uDfzvEOOCqoAMeijRXOLJPBT0QdYWbUnruXgDayoBdQUmtxpXBuMhuTaThGIF1FU8ZIVlTIbbFHkUdmox5OtTkEukYMcFAgJsS4nkG6Eze/RtchmsULiL72WB/mc+ckM0vVZFEGiRWkvt4F1PD1WWmMwh8M4mxQMC6nWa1asaPvSABtd3BZLnxiX/CXwtUsvetpgCbs0CZzTrb8ldjJ6gdeIjt/xhpD+zIIz9rXBCdm1b4WhI58F8zjX8LzkfUI4hnwD60NDwj+EXkP6AaqQLmB5yaMwcun7fL7prvv95Ek8OzheAV81wJnsb+fpP39muKeXdWQMu9Wlo+p+g5f48PTiHe51FtPvpVbNu6jgCp+5+1gPkhBLCHtU9dDaQqexf2nnbzWZ8QcmhNeyiLZPIRb/bgO+lsnrpVC7mIgIubtRNkzNYDxPxkMVPr/qyaHuTdb1uFrgt0V/++sXIOLvGqHoNK9/uz1uxAoNk90ZcxQRoO5exK6+RTVSdyoVyqLgoKLLBbR0ToNM5W23efBy5hRP/cNiukiui/P2NgXBvW2DlRdG2E+Lj4QkJLM+hm/+hZnXXR1GpcayzWqfV7s1ZHII9HFv8AgU8tsToDdwfAAAAAElFTkSuQmCC" class="img-fulid"></i>使用 Google 繼續</button>
+                        <button type="button" class="btn btn-outline-purple text-purple-100"><i class="bi"><img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAABCcAAAQnAEmzTo0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAVRJREFUeAHtVs1LAlEQn7VIqPZmUB1KDxGBF/8B6VYdPNUh+gvq2rWuda8OdQkPQQRSVz2G0a0IliL8AFdBV/Dj4ioo+DHz8AnLU9B1F0T8we7Oznv7fju/N8M8CbrYPb53g4V4fzlT6SnRzX/ykGoDuMFaqB/Ppx6J/rzpkFJgA+ZabY8DbMY8mIS85ISjfS9sbbpgeXGB+cLRGF7x8QnWVmR4vD7EhZ0Gv1aoCASmJLq5CAiLD8LIEZAkqxgBRzJdglBEYbZW0Mcn4Hpz3D19ws+/NnC+7Vk0GWlKmt9eBvqOXZ3vgV5rMDsUVnA/fkcnYCQuua+fsolnVL4obrKlEunVuuAbKgL6MPj6xWyS68C/3Ruj6s1jgRESmbJJAtQ4+PbNbN/OuoEgggTTnaYzggkgoO6PnV8F66HS2qwOotj9hz22KH9Zw7vPu4G+nDCPH1s6qAFmUhbLZSEAAAAASUVORK5CYII=" class="img-fulid"></i>使用 Facebook 繼續</button>
+                        <button type="button" class="btn btn-outline-purple text-purple-100"><i class="bi"><img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAABCcAAAQnAEmzTo0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAPhJREFUeAHNlY0NgjAQhV+dgBFwAt3AjsAIbqAbyAa6AXEDN6hOgE4gG+gG5xGqVFJKbSHxS14I3HHv+pcC/woRrVmKlWNsuOieWjKMie78zR1jw0XLybrXBqRNpE++cBRK+VF3uGDdWCchRKW/P3VspdM/cXh2aS6iiWIVrEdPfBdT3BfpKi4pju1Q9wWFU9hqzjrvS4RztH0UnREQwpnbdtEME9M1qBBO5mNwRTgbnuFkyOCCcFKWouak26mDFE/ZOwK9C86Iwz3NFH+aUwzBSQcKI4cPnJjQ98Xig8IvULPgpomi5rqU1F74ZixBCNoocYw0df3/AlgjleKm550CAAAAAElFTkSuQmCC" class="img-fulid"></i>使用 Apple 繼續</button>
+                    </from>
+                    <h3 class="divider fs-bsm text-neu-200 d-flex justify-content-center align-items">或使用 AI ToolVerse 帳號登入</h3>
+                    <from class="d-grid gap-3 mx-auto w-100 text-start">
+                        <div class="mb-3">
+                            <label class="form-label" for="inputEmail">電子信箱</label>
+                            <input class="form-control text-black" id="inputEmail" name="inputEmail" type="email"
+                                placeholder="請輸入電子信箱">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputPassword" class="form-label">密碼</label>
+                            <div class="input-group mb-3">
+                                <input id="inputPassword" name="inputPassword" class="form-control text-black border-end-0"
+                                    placeholder="請輸入密碼" type="password">
+                                <span class="input-group-text"><i class="bi bi-eye-slash"></i></span>
+                            </div>
+                            <div id="passwordHelpBlock" class="d-flex justify-content-between mt-2">
+                                <div>
+                                    <input class="" id="remberpassword" type="checkbox" name="remberpassword">
+                                    <label class="text-neu-200" for="remberpassword">記住帳號</label>
+                                </div>
+                                <a href="#" class="text-purple-200 text-decoration-none"> 忘記密碼？ </a>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-purple">登入</button>
+                    </from>
+                    <p class="fs-bsm">還沒有帳號？<a href="#" class="text-purple text-decoration-underline">立即註冊</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+  </body>
+</html>
