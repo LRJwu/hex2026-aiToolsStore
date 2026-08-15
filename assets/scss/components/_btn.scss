@@ -51,7 +51,8 @@
 }
 
 .btn-purple {
-  @include button-variant($background: $purple-100,
+  @include button-variant(
+    $background: $purple-100,
     $border: transparent,
     $color: $neutral-600,
     $hover-background:$purple-200,
@@ -65,5 +66,17 @@
 
   &:focus {
     --bs-btn-bg:#{$purple-200};
+  }
+}
+
+.link-purple{
+  color:white!important;
+  &:hover,
+  &:focus{
+    color: RGBA(var(--bs-purple-rgb), var(--bs-link-opacity, 1)) !important;
+  }
+  &:focus{
+    text-decoration: underline;
+    text-underline-offset: .5em;
   }
 }

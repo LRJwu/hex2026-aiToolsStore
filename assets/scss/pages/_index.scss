@@ -30,6 +30,19 @@
     url(/assets/images/index/index-bg/index-bg-5.png) no-repeat bottom/cover,
     linear-gradient(#7B5CA800,#9C84C0);
 }
+.bg-6{
+    background: url(/assets/images/tools/tools-hero-bg.png)no-repeat top center/cover;
+    @include media-breakpoint-down(lg){
+        background-size: 120% 100%;
+    }
+}
+.bg-7{
+    background: url(/assets/images/index/detail-bg-sm.png)no-repeat center/cover;
+
+    @include media-breakpoint-up(lg){
+        background: url(/assets/images/index/detail-bg-lg.png)no-repeat center/cover;
+    }
+}
 .accordion.bg-trn{
     --#{$prefix}accordion-color: #{$white};
     --#{$prefix}accordion-bg: #{$transparent-100};
