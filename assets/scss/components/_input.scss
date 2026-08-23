@@ -15,6 +15,21 @@
     --bs-btn-hover-bg: var(--bs-gray-200);
     --bs-btn-active-bg: var(--bs-gray-200);
     --bs-btn-disabled-bg: var(--bs-gray-200);
-
+    }
 }
+
+@each $color, $value in $theme-colors {
+  .accent-#{$color} {      
+    // 關鍵：只有在 :checked (被選取) 時才改變背景與邊框顏色
+    &:checked {
+      background-color: $value;
+      border-color: $value;
+    }
+    
+    // 順便修正聚焦 (Focus) 時的外框光暈顏色，視覺一致
+    &:focus {
+      border-color: $value;
+      box-shadow: 0 0 0 0.25rem rgba($value, 0.25);
+    }
+  }
 }

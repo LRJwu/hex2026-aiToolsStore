@@ -16,6 +16,17 @@ $utilities: map-merge(                    // 使用 Sass 的 map-merge 函式，
           responsive: true,
         )
       ),
+      "accent-color": (
+      property: accent-color,          // 套用的 CSS 屬性
+      class: accent,                  // 產生 .accent-* 前綴
+      responsive: true,               // 開啟響應式斷點 (例如 .accent-md-primary)
+      values: map-merge(
+        $theme-colors,                // 1. 帶入 Bootstrap 預設的主題色 (primary, danger, success...)
+        (
+          "auto": auto                // 2. 額外擴充自訂數值
+        )
+      )
+    ),
     //建立顏色-neutral系列
     // 生成 .bg-色系-100 ~ .bg-色系-600
     "background-color": map-merge(
