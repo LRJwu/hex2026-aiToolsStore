@@ -1,6 +1,7 @@
 2026六角切版直播班-主線任務w5&w6
 ===
-  - 只是課程作業，== 非正式網站！ ==
+  >[!CAUTION]
+  > 只是課程作業，== 非正式網站！ ==
   - 任務五：[流程表單設計](https://lrjwu.github.io/hex2026-aiToolsStore/account.html "帳戶頁面")
   - 任務六：[AI工具首頁](https://lrjwu.github.io/hex2026-aiToolsStore/index.html "首頁")
   
